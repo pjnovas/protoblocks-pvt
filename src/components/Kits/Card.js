@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 
 import Icon from '../Icon/Icon';
-import Product from '../Products/Product';
+import Product from '../Products/Card';
 
 export default class Kit extends Component {
   render() {
     const { title, products } = this.props;
-    const styles = require('./Kit.scss');
+    const styles = require('./Card.scss');
 
     return (
       <div className={styles.content}>

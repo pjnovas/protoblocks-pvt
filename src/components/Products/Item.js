@@ -1,10 +1,10 @@
 import React, { Component, PropTypes } from 'react';
-import Product from './Product';
+import Product from './Card';
 
 export default class ProductItem extends Component {
   render() {
     const { product } = this.props;
-    const styles = require('./ProductItem.scss');
+    const styles = require('./Item.scss');
 
     return (
       <div className={styles.item}>

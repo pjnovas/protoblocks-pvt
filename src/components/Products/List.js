@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 
 export default class ProductsList extends Component {
   render() {
-    const styles = require('./Products.scss');
+    const styles = require('./List.scss');
 
     return (
       <div className={styles.products}>

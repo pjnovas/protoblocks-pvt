@@ -1,14 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 
-export default class Product extends Component {
+export default class ProductView extends Component {
   render() {
-    const { id, family, title, kit } = this.props;
-    const styles = require('./ProductCard.scss');
-
-    let ctnStyles = styles.content + ' ' + styles[family];
-    if (kit) {
-      ctnStyles += ' ' + styles.kit;
-    }
+    const { id, family, title } = this.props;
+    const styles = require('./View.scss');
+    const ctnStyles = styles.content + ' ' + styles[family];
 
     return (
       <div className={ctnStyles}>
@@ -25,9 +21,8 @@ export default class Product extends Component {
   }
 }
 
-Product.propTypes = {
+ProductView.propTypes = {
   id: PropTypes.string,
   family: PropTypes.string,
-  title: PropTypes.string,
-  kit: PropTypes.bool
+  title: PropTypes.string
 };
