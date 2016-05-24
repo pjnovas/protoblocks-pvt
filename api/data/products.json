@@ -3,32 +3,50 @@
     "family": "lightblue",
     "brand": "arduino",
     "name": "Starter",
-    "title": "Arduino Starter"
+    "title": "Arduino Starter",
+    "link": "http://google.com",
+    "details": "Arduino Starter es un módulo creado para soportar Arduino Uno y Mega.\n\n Viene en color azul etc etc",
+    "photos": 3
 }, {
     "id": "arduino-expert",
     "family": "lightblue",
     "brand": "arduino",
     "name": "Expert",
-    "title": "Arduino Expert"
+    "title": "Arduino Expert",
+    "link": "http://google.com",
+    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "photos": 3
 }, {
     "id": "raspberry-pi",
     "family": "red",
     "brand": "raspberry",
     "name": "Raspberry PI",
-    "title": "Raspberry PI"
+    "title": "Raspberry PI",
+    "link": "http://google.com",
+    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "photos": 3
 }, {
     "id": "protoboard",
     "family": "white",
     "name": "Protoboard",
-    "title": "Protoboard"
+    "title": "Protoboard",
+    "link": "http://google.com",
+    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "photos": 6
 }, {
     "id": "terminal",
     "family": "white",
     "name": "Terminales",
-    "title": "Terminales"
+    "title": "Terminales",
+    "link": "http://google.com",
+    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "photos": 2
 }, {
     "id": "cables",
     "family": "orange",
     "name": "Organizador de Cables",
-    "title": "Cableado"
+    "title": "Cableado",
+    "link": "http://google.com",
+    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "photos": 0
 }]

@@ -29,8 +29,7 @@ import {
   state => ({
     products: state.products.byId,
     loading: state.products.loading
-  }),
-  {...productsActions })
+  }), {...productsActions })
 export default class Home extends Component {
   static propTypes = {
     products: PropTypes.object,
@@ -46,10 +45,17 @@ export default class Home extends Component {
       return (<span>Cargando ...</span>);
     }
 
+    const product = products[params.pid];
+
+    const meta = [
+      { name: 'description', content: product.description },
+      { property: 'og:type', content: 'product' }
+    ];
+
     return (
       <div>
-        <Helmet title="Home"/>
-        <ProductView {...products[params.pid]} />
+        <Helmet title={product.title} meta={meta} />
+        <ProductView {...product} tab={params.tab}/>
       </div>
     );
   }

@@ -1,20 +1,117 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
+import ImageGallery from './ImageGallery';
+import Icon from '../Icon/Icon';
 
 export default class ProductView extends Component {
-  render() {
-    const { id, family, title } = this.props;
+
+  getImages() {
+    const baseImg = '/images/products/';
+    const basePhoto = baseImg + 'photos/';
+
+    const { id, photos } = this.props;
+    const fileName = id.replace('-', '_');
+
+    const images = [];
+
+    // Put 3D view first
+    images.push({
+      original: `${baseImg}${fileName}_b.png`,
+      thumbnail: `${baseImg}${fileName}_s.png`
+    });
+
+    // Set Product Photos
+    for (let i = 0; i < photos; i++) {
+      images.push({
+        original: `${basePhoto}${fileName}_${i}.png`,
+        thumbnail: `${basePhoto}${fileName}_${i}.png`
+      });
+    }
+
+    return images;
+  }
+
+  getTabs() {
+    const { id, tab, link } = this.props;
     const styles = require('./View.scss');
-    const ctnStyles = styles.content + ' ' + styles[family];
+
+    const getTab = (section, text) => {
+      const style = section === tab ? styles.selected : '';
+      const to = section ? `/${id}/${section}` : `/${id}`;
+
+      return (
+        <li className={style}>
+          <Link to={to}>{text}</Link>
+        </li>
+      );
+    };
 
     return (
-      <div className={ctnStyles}>
+      <ul>
+        {getTab(undefined, 'Detalle')}
+        {getTab('info', 'Manual')}
+        {getTab('contact', 'Consulta')}
+        <li className={styles.buy}>
+          <a href={link} target="_blank">Comprar</a>
+        </li>
+      </ul>
+    );
+  }
 
-        <div className={styles.header}>
-          <h3 className={styles.name}>{title}</h3>
+  render() {
+    const { title, tab, details } = this.props;
+    const styles = require('./View.scss');
+
+    const images = this.getImages();
+    const tabs = this.getTabs();
+
+    return (
+      <div>
+        <div className={styles.navBar}>
+          <div className={styles.container}>
+            <Link className={styles.logo} to="/">
+              [LOGO] PROTOBLOCKS
+            </Link>
+            <Link className={styles.close} to="/">
+              <Icon name="cancel" />
+            </Link>
+          </div>
         </div>
+        <div className={styles.container}>
+          <div className={styles.content}>
 
-        <div className={styles.body}>
-          <img src={`/images/products/${id.replace('-', '_')}_s.png`} />
+            <div className={styles.header}>
+              <h3 className={styles.name}>{title}</h3>
+            </div>
+
+            <div className={styles.slider}>
+              <ImageGallery lazyLoad items={images}/>
+            </div>
+
+            <div className={styles.description}>
+              {tabs}
+
+              <div className={styles.tabs}>
+                { !tab &&
+                <div className={styles.tab + ' ' + styles.details}>
+                  {details}
+                </div>
+                }
+                { tab === 'info' &&
+                <div className={styles.tab + ' ' + styles.info}>
+                  Manual
+                </div>
+                }
+                { tab === 'contact' &&
+                <div className={styles.tab + ' ' + styles.contact}>
+                  Consulta
+                </div>
+                }
+              </div>
+
+            </div>
+
+          </div>
         </div>
       </div>
     );
@@ -24,5 +121,9 @@ export default class ProductView extends Component {
 ProductView.propTypes = {
   id: PropTypes.string,
   family: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  details: PropTypes.string,
+  photos: PropTypes.number,
+  link: PropTypes.string,
+  tab: PropTypes.oneOf([ 'details', 'info', 'contact' ])
 };

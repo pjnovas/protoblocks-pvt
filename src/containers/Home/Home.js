@@ -28,6 +28,8 @@ import Kits from './Kits';
 // https://github.com/erikras/react-redux-universal-hot-example/issues/1078
 //@asyncConnect([{ promise: () => Promise.resolve() }])
 
+
+// TODO: check for sequencial actions: https://github.com/erikras/react-redux-universal-hot-example/issues/1094
 @asyncConnect([{
   deferred: true,
   promise: ({store: {dispatch, getState}}) => {
