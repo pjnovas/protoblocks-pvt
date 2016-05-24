@@ -1,0 +1,16 @@
+@import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
+
+.footer {
+  @include span(12);
+  float: none;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  background-color: #14272F;
+  min-height: 200px;
+
+  .wrap {
+    @include container($max-container);
+  }
+}

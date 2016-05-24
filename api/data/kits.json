@@ -1,0 +1,40 @@
+[{
+  "id": "kit-arduino-starter",
+  "title": "Kit Arduino Starter",
+  "products": [{
+    "quantity": 1,
+    "id": "arduino-starter"
+  }, {
+    "quantity": 2,
+    "id": "protoboard"
+  }, {
+    "quantity": 1,
+    "id": "cables"
+  }]
+}, {
+  "id": "kit-arduino-expert",
+  "title": "Kit Arduino Expert",
+  "products": [{
+    "quantity": 1,
+    "id": "arduino-expert"
+  }, {
+    "quantity": 2,
+    "id": "protoboard"
+  }, {
+    "quantity": 1,
+    "id": "cables"
+  }]
+}, {
+  "id": "kit-raspberry-pi",
+  "title": "Kit Raspberry PI",
+  "products": [{
+    "quantity": 1,
+    "id": "raspberry-pi"
+  }, {
+    "quantity": 2,
+    "id": "protoboard"
+  }, {
+    "quantity": 1,
+    "id": "cables"
+  }]
+}]

@@ -1,0 +1,44 @@
+@import "../../theme/susy.scss";
+
+.contactForm {
+  @include span(12);
+
+  .formBody {
+    @include span(12);
+  }
+
+  .control {
+    @include span(8);
+    margin-top: 10px;
+  }
+
+  input,
+  textarea {
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #2F4A56;
+    color: #fff;
+    border: none;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  .buttons {
+    @include span(8);
+
+    a {
+      @include span(3 last);
+
+      background-color: #4B92B1;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #fff;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+  }
+}

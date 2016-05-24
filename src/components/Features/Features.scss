@@ -1,0 +1,44 @@
+@import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
+
+.features {
+  @include span(12);
+  float: none;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  background-color: #2F4A56;
+
+  .wrap {
+    @include container($max-container);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .items {
+    @include span(12);
+
+    .item {
+      @include span(4);
+
+      h4 {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0;
+      }
+
+      .iconHolder {
+        font-size: 7em;
+        text-align: center;
+      }
+
+      .body {
+        text-align: center;
+      }
+    }
+  }
+}

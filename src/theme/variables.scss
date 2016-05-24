@@ -1,0 +1,49 @@
+$path-images: "/images/";
+
+$color-action: #3596C4;
+$color-secondary: #7FC342;
+
+$color-dark: #222633;
+$color-light: #FFFFFE;
+
+$color-warning: #eea236;
+$color-danger: #CE3D3D;
+$color-error: #CE3D3D;
+
+$color-back-light: $color-light;
+$color-back-action: $color-action;
+$color-back-dark: $color-dark;
+$color-back-dark-lighter: #262B3A;
+$color-back-black: #1C202B;
+
+$color-layout-border: #1E222E;
+$color-layout-border-light: #37A0D1;
+
+$color-font-dark: $color-dark;
+$color-font-light: $color-light;
+$color-font-disabled: #9A9A9A;
+
+$color-button-default: #1C202B;
+$color-button-primary: $color-action;
+$color-button-secondary: $color-secondary;
+$color-button-disabled: #D5D5D5;
+
+$color-input-placeholder: #B5B5B5;
+$color-input-text: $color-light;
+$color-input-background: #3D424D;
+$color-input-border: #565B64;
+
+$font-family: 'Roboto', sans-serif;
+
+// Screens
+$bp-small : 24em;
+$bp-small-2 : 29.75em;
+$bp-small-3 : 39.8em;
+$bp-med : 46.8em;
+$bp-med-2 : 48em;
+$bp-large : 50em;
+$bp-large-2 : 54.5em;
+$bp-xl : 60em;
+$bp-xl-2 : 67em;
+$bp-xl-3 : 74em;
+$max-container: 80em;

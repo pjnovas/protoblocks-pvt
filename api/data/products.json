@@ -1,0 +1,34 @@
+[{
+    "id": "arduino-starter",
+    "family": "lightblue",
+    "brand": "arduino",
+    "name": "Starter",
+    "title": "Arduino Starter"
+}, {
+    "id": "arduino-expert",
+    "family": "lightblue",
+    "brand": "arduino",
+    "name": "Expert",
+    "title": "Arduino Expert"
+}, {
+    "id": "raspberry-pi",
+    "family": "red",
+    "brand": "raspberry",
+    "name": "Raspberry PI",
+    "title": "Raspberry PI"
+}, {
+    "id": "protoboard",
+    "family": "white",
+    "name": "Protoboard",
+    "title": "Protoboard"
+}, {
+    "id": "terminal",
+    "family": "white",
+    "name": "Terminales",
+    "title": "Terminales"
+}, {
+    "id": "cables",
+    "family": "orange",
+    "name": "Organizador de Cables",
+    "title": "Cableado"
+}]

@@ -1,0 +1,26 @@
+@import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
+
+.kits {
+  @include span(12);
+  float: none;
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  background-color: #D0D0D0;
+  color: #4E4E4E;
+
+  .wrap {
+    @include container($max-container);
+  }
+
+  .intro {
+    margin: 0;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    @include span(12);
+  }
+}

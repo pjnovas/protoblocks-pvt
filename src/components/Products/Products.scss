@@ -1,0 +1,22 @@
+@import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
+
+.products {
+  @include span(12);
+  float: none;
+  padding-top: 40px;
+  padding-bottom: 80px;
+
+  background-color: #E8E8E8;
+  color: #4E4E4E;
+
+  .productsIntro {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .wrap {
+    @include container($max-container);
+  }
+
+}

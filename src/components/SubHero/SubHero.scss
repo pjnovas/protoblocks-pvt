@@ -1,0 +1,26 @@
+@import "../../theme/susy.scss";
+@import "../../theme/parallax.scss";
+
+.subhero {
+  @extend .parallax;
+
+  height: 300px;
+  min-height: 300px;
+  background-image: url('./bot.jpg');
+  position: relative;
+
+  .content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.45);
+    text-align: center;
+    color: #000;
+
+    h2 {
+      font-size: 3em;
+      margin: 5px;
+      color: #636363;
+    }
+  }
+}

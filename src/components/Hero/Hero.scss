@@ -1,0 +1,55 @@
+@import "../../theme/susy.scss";
+@import "../../theme/parallax.scss";
+
+.hero {
+  @include container;
+  @extend .parallax;
+
+  height: 100vh;
+  background-image: url('./top.jpg');
+  position: relative;
+
+  .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: rgba(0, 0, 0, 0.45);
+
+    .logo {
+      width: 170px;
+      height: 150px;
+      background-image: url("/images/logo.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin: 40px auto;
+    }
+
+    p {
+      font-size: 2em;
+      text-align: center;
+      padding: 20px;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+  }
+
+  .continue {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    a {
+      width: 60px;
+      background: #00ADD2;
+      padding: 15px 13px;
+      border-radius: 50%;
+      color: #FFF;
+      cursor: pointer;
+      font-size: 2.5em;
+    }
+  }
+
+}

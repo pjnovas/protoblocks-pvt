@@ -1,0 +1,6 @@
+@import "../../theme/susy.scss";
+
+.item {
+  @include span(12);
+  margin-bottom: 20px;
+}
