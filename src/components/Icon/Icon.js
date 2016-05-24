@@ -3,10 +3,8 @@ import React, { PropTypes, Component } from 'react';
 export default class Icon extends Component {
 
   render() {
-    const styles = require('./Icon.scss');
-
     return (
-      <i className={[styles.icon, styles[`icon-${this.props.name}`]]}></i>
+      <i className={'icon ' + `icon-${this.props.name}`}></i>
     );
   }
 }
