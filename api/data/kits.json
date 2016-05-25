@@ -40,4 +40,18 @@
     "quantity": 1,
     "id": "cables"
   }]
+}, {
+  "id": "kit-expansion",
+  "title": "Kit Expansión",
+  "link": "http://google.com",
+  "products": [{
+    "quantity": 1,
+    "id": "terminal"
+  }, {
+    "quantity": 2,
+    "id": "protoboard"
+  }, {
+    "quantity": 1,
+    "id": "cables"
+  }]
 }]
