@@ -7,7 +7,7 @@
   padding-top: 40px;
   padding-bottom: 80px;
 
-  background-color: #2B6784;
+  background-color: $color-back-intro;
 
   .wrap {
     @include container($max-container);
@@ -30,12 +30,12 @@
     .img {
       height: 200px;
       vertical-align: middle;
-      background-color: #113444;
+      background-color: darken($color-back-intro, 20%);
       background-position: 50% 50%;
       background-size: 100%;
       background-repeat: no-repeat;
 
-      border: 2px solid #DEDEDE;
+      border: 2px solid $color-back-light;
       border-radius: 4px;
     }
 
@@ -65,7 +65,7 @@
               font-size: 2em;
 
               i {
-                color: #fff;
+                color: $color-font-light;
                 font-size: 3em;
               }
             }

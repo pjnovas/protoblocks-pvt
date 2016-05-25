@@ -1,5 +1,6 @@
 @import "../../theme/susy.scss";
 @import "../../theme/parallax.scss";
+@import "../../theme/variables.scss";
 
 .subhero {
   @extend .parallax;
@@ -9,18 +10,29 @@
   background-image: url('./bot.jpg');
   position: relative;
 
+  .overlay {
+    position: absolute;
+    background:url($overlay) repeat;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+
   .content {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(0, 0, 0, 0.45);
     text-align: center;
     color: #000;
+    z-index: 2;
 
     h2 {
       font-size: 3em;
       margin: 5px;
-      color: #636363;
+      color: $color-font-light;
     }
   }
 }

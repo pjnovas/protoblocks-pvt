@@ -1,7 +1,7 @@
 @import "../../theme/susy.scss";
 
 .item {
-  @include span(4);
+  @include span(3);
   margin-top: 10px;
   margin-bottom: 10px;
 }

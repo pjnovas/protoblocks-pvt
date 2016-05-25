@@ -7,7 +7,7 @@
   padding-top: 30px;
   padding-bottom: 60px;
 
-  background-color: #2F4A56;
+  background-color: darken($color-back-action, 10%);
 
   .wrap {
     @include container($max-container);

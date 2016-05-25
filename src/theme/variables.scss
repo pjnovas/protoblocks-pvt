@@ -1,10 +1,8 @@
-$path-images: "/images/";
-
-$color-action: #3596C4;
+$color-action: #2B6784;
 $color-secondary: #7FC342;
 
-$color-dark: #222633;
-$color-light: #FFFFFE;
+$color-dark: #4E4E4E;
+$color-light: #FFFFFF;
 
 $color-warning: #eea236;
 $color-danger: #CE3D3D;
@@ -12,28 +10,21 @@ $color-error: #CE3D3D;
 
 $color-back-light: $color-light;
 $color-back-action: $color-action;
-$color-back-dark: $color-dark;
-$color-back-dark-lighter: #262B3A;
-$color-back-black: #1C202B;
+$color-back-dark: darken($color-back-action, 20%);
 
-$color-layout-border: #1E222E;
-$color-layout-border-light: #37A0D1;
+$color-back-intro: $color-back-action;
+$color-back-input: darken($color-back-action, 12%);
 
 $color-font-dark: $color-dark;
 $color-font-light: $color-light;
-$color-font-disabled: #9A9A9A;
 
-$color-button-default: #1C202B;
-$color-button-primary: $color-action;
-$color-button-secondary: $color-secondary;
-$color-button-disabled: #D5D5D5;
-
-$color-input-placeholder: #B5B5B5;
-$color-input-text: $color-light;
-$color-input-background: #3D424D;
-$color-input-border: #565B64;
+$color-type-lightblue: #499DC5;
+$color-type-red: #dd4848;
+$color-type-white: #A5A5A5;
+$orange-type-orange: #EC9244;
 
 $font-family: 'Roboto', sans-serif;
+$overlay: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGElEQVQIW2NkYGAwZkCAs4xECSDpYGAAAHEaAwUNvi3TAAAAAElFTkSuQmCC';
 
 // Screens
 $bp-small : 24em;

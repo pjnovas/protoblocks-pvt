@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Icon from '../Icon/Icon';
+import Logo from '../Logo';
 
 export default class Hero extends Component {
   static propTypes = {
@@ -11,9 +12,10 @@ export default class Hero extends Component {
 
     return (
       <div className={styles.hero}>
+        <div className={styles.overlay} />
         <div className={styles.content}>
-          <div className={styles.logo} />
-          <p>Crea prototipos ordenadamente</p>
+          <Logo className={styles.logo}/>
+          <p>Prototipos Modulares</p>
         </div>
         <div className={styles.continue}>
           <a onClick={ () => this.props.onContinue() }>

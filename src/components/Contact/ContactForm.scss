@@ -1,4 +1,5 @@
 @import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
 
 .contactForm {
   @include span(12);
@@ -17,8 +18,8 @@
     padding: 8px 10px;
     width: 100%;
     font-size: 1.2em;
-    background-color: #2F4A56;
-    color: #fff;
+    background-color: $color-back-input;
+    color: $color-font-light;
     border: none;
   }
 
@@ -32,11 +33,11 @@
     a {
       @include span(3 last);
 
-      background-color: #4B92B1;
+      background-color: $color-back-action;
       padding-top: 10px;
       padding-bottom: 10px;
       text-align: center;
-      color: #fff;
+      color: $color-font-light;
       margin: 10px 0;
       cursor: pointer;
     }

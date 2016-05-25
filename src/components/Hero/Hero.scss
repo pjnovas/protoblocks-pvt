@@ -1,5 +1,6 @@
 @import "../../theme/susy.scss";
 @import "../../theme/parallax.scss";
+@import "../../theme/variables.scss";
 
 .hero {
   @include container;
@@ -9,28 +10,35 @@
   background-image: url('./top.jpg');
   position: relative;
 
+  .overlay {
+    position: absolute;
+    background:url($overlay) repeat;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+
   .content {
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
     background: rgba(0, 0, 0, 0.45);
+    z-index: 2;
 
     .logo {
-      width: 170px;
-      height: 150px;
-      background-image: url("/images/logo.png");
-      background-size: 100%;
-      background-repeat: no-repeat;
+      width: 510px;
+      height: 155px;
+      display: block;
       margin: 40px auto;
     }
 
     p {
-      font-size: 2em;
+      font-size: 4em;
       text-align: center;
-      padding: 20px;
-      max-width: 500px;
-      margin: 20px auto;
+      font-weight: 400;
     }
   }
 
@@ -40,15 +48,21 @@
     left: 0;
     width: 100%;
     text-align: center;
+    z-index: 2;
 
     a {
       width: 60px;
-      background: #2B6784;
+      background: $color-back-light;
+      color: $color-action;
       padding: 15px 13px;
       border-radius: 50%;
-      color: #FFF;
       cursor: pointer;
       font-size: 2.5em;
+
+      &:hover {
+        background: $color-back-action;
+        color: $color-font-light;
+      }
     }
   }
 

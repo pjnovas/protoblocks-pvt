@@ -1,46 +1,48 @@
+@import "../../theme/variables.scss";
+
 .content {
   padding: 5px 10px;
 
   &.lightblue {
-    background-color: #499DC5;
-    color: #fff;
+    background-color: $color-type-lightblue;
+    color: $color-font-light;
 
     .header {
       h3 {
-        background-color: #499DC5;
+        background-color: $color-type-lightblue;
       }
     }
   }
 
   &.red {
-    background-color: #DC4747;
-    color: #fff;
+    background-color: $color-type-red;
+    color: $color-font-light;
 
     .header {
       h3 {
-        background-color: #DC4747;
+        background-color: $color-type-red;
       }
     }
   }
 
   &.white {
-    background-color: #A5A5A5;
-    color: #fff;
+    background-color: $color-type-white;
+    color: $color-font-light;
 
     .header {
       h3 {
-        background-color: #A5A5A5;
+        background-color: $color-type-white;
       }
     }
   }
 
   &.orange {
-    background-color: #EC9244;
-    color: #fff;
+    background-color: $orange-type-orange;
+    color: $color-font-light;
 
     .header {
       h3 {
-        background-color: #EC9244;
+        background-color: $orange-type-orange;
       }
     }
   }
@@ -49,7 +51,7 @@
     height: 40px;
     position: relative;
     margin-top: 5px;
-    background-color: #fff;
+    background-color: $color-back-light;
 
     h3 {
       position: absolute;
@@ -58,7 +60,7 @@
       width: 100%;
       margin: 0;
       text-align: center;
-      font-size: 2em;
+      font-size: 1.9em;
 
       text-transform: uppercase;
       font-weight: 100;

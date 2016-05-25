@@ -18,6 +18,7 @@ import KitItem from './Kits/Item';
 import KitsList from './Kits/List';
 
 import Footer from './Footer/Footer';
+import Logo from './Logo';
 
 export default {
   Hero,
@@ -31,4 +32,5 @@ export default {
   KitsList,
   Footer,
   ProductView,
+  Logo
 };
