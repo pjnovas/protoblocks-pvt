@@ -30,7 +30,9 @@ export default class Kits extends Component {
     return kits.map( kit => {
       return {
         ...kit,
-        products: (kit.products || []).map( p => products[p.id] )
+        products: (kit.products || []).map( p => {
+          return Object.assign(products[p.id], p);
+        })
       };
     });
   }

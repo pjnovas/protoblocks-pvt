@@ -1,0 +1,30 @@
+@import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
+
+.navBar {
+  background-color: darken($color-back-action, 12%);
+  color: $color-font-light;
+  min-height: 50px;
+
+  .container {
+    @include container($max-container);
+    padding-top: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-font-light;
+    padding-top: 5px;
+  }
+
+  .logo {
+    width: 150px;
+    height: 50px;
+    margin-left: 10px;
+  }
+
+  .close {
+    font-size: 2em;
+    float: right;
+  }
+}

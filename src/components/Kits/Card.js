@@ -5,13 +5,15 @@ import Product from '../Products/Card';
 
 export default class Kit extends Component {
   render() {
-    const { title, products } = this.props;
+    const { title, products, link } = this.props;
     const styles = require('./Card.scss');
 
     return (
       <div className={styles.content}>
-        <h3 className={styles.title}>{title}</h3>
-
+        <h3 className={styles.title}>
+          {title}
+          <a className={styles.buy} href={link} target="_blank">Comprar</a>
+        </h3>
         <div className={styles.products}>
           {products.map(p => {
             return (
@@ -35,5 +37,6 @@ export default class Kit extends Component {
 Kit.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
+  link: PropTypes.string,
   products: PropTypes.array
 };

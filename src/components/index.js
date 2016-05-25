@@ -19,6 +19,7 @@ import KitsList from './Kits/List';
 
 import Footer from './Footer/Footer';
 import Logo from './Logo';
+import NavBar from './NavBar/NavBar';
 
 export default {
   Hero,
@@ -32,5 +33,6 @@ export default {
   KitsList,
   Footer,
   ProductView,
-  Logo
+  Logo,
+  NavBar
 };

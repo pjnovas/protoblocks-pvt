@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 //import config from '../../config';
+import Helmet from 'react-helmet';
 import { asyncConnect } from 'redux-async-connect';
 
 import {
@@ -78,6 +79,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
+        <Helmet title=" "/>
         <Hero onContinue={ () => this.goTo('intro') } />
         <Element name="intro">
           <Intro />

@@ -18,7 +18,7 @@ module.exports = Object.assign({
     title: 'ProtoBlocks',
     description: 'ProtoBlocks Desc.',
     head: {
-      titleTemplate: 'ProtoBlocks: %s',
+      titleTemplate: 'ProtoBlocks %s',
       meta: [
         {name: 'description', content: 'ProtoBlocks Desc.'},
         {charset: 'utf-8'},

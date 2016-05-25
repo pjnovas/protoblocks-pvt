@@ -1,6 +1,7 @@
 [{
   "id": "kit-arduino-starter",
   "title": "Kit Arduino Starter",
+  "link": "http://google.com",
   "products": [{
     "quantity": 1,
     "id": "arduino-starter"
@@ -14,6 +15,7 @@
 }, {
   "id": "kit-arduino-expert",
   "title": "Kit Arduino Expert",
+  "link": "http://google.com",
   "products": [{
     "quantity": 1,
     "id": "arduino-expert"
@@ -27,6 +29,7 @@
 }, {
   "id": "kit-raspberry-pi",
   "title": "Kit Raspberry PI",
+  "link": "http://google.com",
   "products": [{
     "quantity": 1,
     "id": "raspberry-pi"

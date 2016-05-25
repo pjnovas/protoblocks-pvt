@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 import ImageGallery from './ImageGallery';
-import Icon from '../Icon/Icon';
+import NavBar from '../NavBar/NavBar';
 
 export default class ProductView extends Component {
 
@@ -67,16 +67,7 @@ export default class ProductView extends Component {
 
     return (
       <div>
-        <div className={styles.navBar}>
-          <div className={styles.container}>
-            <Link className={styles.logo} to="/">
-              [LOGO] PROTOBLOCKS
-            </Link>
-            <Link className={styles.close} to="/modulos">
-              <Icon name="cancel" />
-            </Link>
-          </div>
-        </div>
+        <NavBar showClose/>
         <div className={styles.container}>
           <div className={styles.content}>
 

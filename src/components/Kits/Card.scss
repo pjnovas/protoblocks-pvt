@@ -5,7 +5,20 @@
   .title {
     margin: 0;
     font-size: 2em;
+
+    .buy {
+      background-color: #3FBF3F;
+      color: #fff;
+      padding: 6px 12px;
+      font-size: 0.6em;
+      font-weight: 400;
+      margin: 15px;
+      vertical-align: middle;
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
+
 
   .products {
     @include span(12);
@@ -13,7 +26,6 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
 
   .product {
     @include span(2);
