@@ -12,7 +12,9 @@ export default () => {
   return (
     <Route path="/" component={App}>
 
-      <Route path=":pid" component={Product}>
+      <Route path=":section" component={Home} />
+
+      <Route path="/modulos/:pid" component={Product}>
         <Route path=":tab" component={Product}/>
       </Route>
 

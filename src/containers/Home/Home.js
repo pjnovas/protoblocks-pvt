@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 //import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
 
@@ -24,10 +24,15 @@ import {
 import Products from './Products';
 import Kits from './Kits';
 
+import {
+  Element,
+  scroller
+} from 'react-scroll';
+
+
 // this DUMMY annotation is necesary to make Server Rendering WORK
 // https://github.com/erikras/react-redux-universal-hot-example/issues/1078
 //@asyncConnect([{ promise: () => Promise.resolve() }])
-
 
 // TODO: check for sequencial actions: https://github.com/erikras/react-redux-universal-hot-example/issues/1094
 @asyncConnect([{
@@ -47,13 +52,40 @@ import Kits from './Kits';
   }
 }])
 export default class Home extends Component {
+  static propTypes = {
+    params: PropTypes.object
+  };
+
+  componentDidMount() {
+    const { params } = this.props;
+    const validSections = ['modulos'];
+
+    if (params.section && validSections.indexOf(params.section) > -1) {
+      setTimeout(() => this.goTo(params.section, {
+        duration: 0,
+        smooth: false
+      }), 100);
+    }
+  }
+
+  goTo(element, options) {
+    scroller.scrollTo(element, Object.assign({
+      duration: 1500,
+      smooth: true
+    }, options));
+  }
+
   render() {
     return (
       <div>
-        <Hero />
-        <Intro />
+        <Hero onContinue={ () => this.goTo('intro') } />
+        <Element name="intro">
+          <Intro />
+        </Element>
         <SubHero />
-        <Products/>
+        <Element name="modulos">
+          <Products/>
+        </Element>
         <Kits />
         <Features />
         <Contact />

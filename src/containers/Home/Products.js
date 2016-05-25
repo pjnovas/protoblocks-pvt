@@ -33,7 +33,7 @@ export default class Products extends Component {
       <div>
         <ProductsList>
           {products.map(product =>
-            <Link key={product.id} to={`/${product.id}`}>
+            <Link key={product.id} to={`/modulos/${product.id}`}>
               <ProductItem product={product}/>
             </Link>
           )}

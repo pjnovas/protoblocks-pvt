@@ -23,8 +23,8 @@ export default class ProductView extends Component {
     // Set Product Photos
     for (let i = 0; i < photos; i++) {
       images.push({
-        original: `${basePhoto}${fileName}_${i}.png`,
-        thumbnail: `${basePhoto}${fileName}_${i}.png`
+        original: `${basePhoto}${fileName}_${i}.jpg`,
+        thumbnail: `${basePhoto}${fileName}_${i}.jpg`
       });
     }
 
@@ -37,7 +37,7 @@ export default class ProductView extends Component {
 
     const getTab = (section, text) => {
       const style = section === tab ? styles.selected : '';
-      const to = section ? `/${id}/${section}` : `/${id}`;
+      const to = section ? `/modulos/${id}/${section}` : `/modulos/${id}`;
 
       return (
         <li className={style}>
@@ -72,7 +72,7 @@ export default class ProductView extends Component {
             <Link className={styles.logo} to="/">
               [LOGO] PROTOBLOCKS
             </Link>
-            <Link className={styles.close} to="/">
+            <Link className={styles.close} to="/modulos">
               <Icon name="cancel" />
             </Link>
           </div>

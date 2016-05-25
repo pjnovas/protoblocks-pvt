@@ -6,7 +6,7 @@
     "title": "Arduino Starter",
     "link": "http://google.com",
     "details": "Arduino Starter es un módulo creado para soportar Arduino Uno y Mega.\n\n Viene en color azul etc etc",
-    "photos": 3
+    "photos": 4
 }, {
     "id": "arduino-expert",
     "family": "lightblue",
@@ -15,7 +15,7 @@
     "title": "Arduino Expert",
     "link": "http://google.com",
     "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
-    "photos": 3
+    "photos": 4
 }, {
     "id": "raspberry-pi",
     "family": "red",
@@ -24,7 +24,7 @@
     "title": "Raspberry PI",
     "link": "http://google.com",
     "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
-    "photos": 3
+    "photos": 4
 }, {
     "id": "protoboard",
     "family": "white",
@@ -32,7 +32,7 @@
     "title": "Protoboard",
     "link": "http://google.com",
     "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
-    "photos": 6
+    "photos": 7
 }, {
     "id": "terminal",
     "family": "white",
@@ -40,7 +40,7 @@
     "title": "Terminales",
     "link": "http://google.com",
     "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
-    "photos": 2
+    "photos": 4
 }, {
     "id": "cables",
     "family": "orange",
@@ -48,5 +48,5 @@
     "title": "Cableado",
     "link": "http://google.com",
     "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
-    "photos": 0
+    "photos": 2
 }]
