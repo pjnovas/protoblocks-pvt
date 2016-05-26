@@ -1,6 +1,8 @@
+@import "../../theme/susy.scss";
 @import "../../theme/variables.scss";
 
 .content {
+  @include span(12);
   padding: 5px 10px;
 
   &.lightblue {
@@ -53,6 +55,14 @@
     margin-top: 5px;
     background-color: $color-back-light;
 
+    &.mobileTitle {
+      display: none;
+    }
+
+    @include susy-media(0 $bp-med) {
+      height: 15px;
+    }
+
     h3 {
       position: absolute;
       bottom: -15px;
@@ -64,6 +74,18 @@
 
       text-transform: uppercase;
       font-weight: 100;
+
+      @include susy-media(0 $bp-xl-2h) {
+        font-size: 1.5em;
+      }
+
+      @include susy-media(0 $bp-med-2) {
+        font-size: 1.9em;
+      }
+
+      @include susy-media(0 $bp-small-3) {
+        font-size: 1.5em;
+      }
     }
   }
 
@@ -71,11 +93,23 @@
     img {
       width: 100%;
     }
+
+    @include susy-media(0 $bp-small-2) {
+      @include span(2);
+
+      img {
+        margin-top: 5px;
+      }
+    }
   }
 
   &.kit {
     float: none;
     width: 100%;
+
+    @include susy-media(0 $bp-small-2) {
+      @include span(12);
+    }
 
     .header {
       height: 0;
@@ -83,11 +117,55 @@
       h3 {
         font-size: 1em;
         font-weight: 400;
+
+        @include susy-media(0 $bp-small-2) {
+          font-size: 1.5em;
+        }
       }
+
     }
 
     .body {
       width: 100%;
+
+      @include susy-media(0 $bp-small-2) {
+        @include span(2);
+      }
+    }
+  }
+
+  .header {
+    @include susy-media(0 $bp-small-2) {
+      &.desktopTitle {
+        display: none;
+      }
+
+      &.mobileTitle {
+        display: initial;
+      }
+
+      @include span(10);
+
+      height: 30px;
+      padding: 0;
+      margin: 0;
+
+      h3 {
+        text-align: left;
+        position: initial;
+        text-indent: 10px;
+      }
+    }
+  }
+
+  .body {
+
+    @include susy-media(0 $bp-small-2) {
+      @include span(2);
+
+      img {
+        margin-top: 5px;
+      }
     }
   }
 

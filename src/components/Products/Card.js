@@ -13,12 +13,16 @@ export default class Product extends Component {
     return (
       <div className={ctnStyles}>
 
-        <div className={styles.header}>
+        <div className={styles.header + ' ' + styles.desktopTitle}>
           <h3 className={styles.name}>{title}</h3>
         </div>
 
         <div className={styles.body}>
           <img src={`/images/products/${id.replace('-', '_')}_s.png`} />
+        </div>
+
+        <div className={styles.header + ' ' + styles.mobileTitle}>
+          <h3 className={styles.name}>{title}</h3>
         </div>
       </div>
     );

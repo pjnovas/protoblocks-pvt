@@ -10,6 +10,11 @@
   background-image: url('./bot.jpg');
   position: relative;
 
+  @include susy-media(0 $bp-med-2) {
+    height: 150px;
+    min-height: 150px;
+  }
+
   .overlay {
     position: absolute;
     background:url($overlay) repeat;
@@ -33,6 +38,10 @@
       font-size: 3em;
       margin: 5px;
       color: $color-font-light;
+
+      @include susy-media(0 $bp-small-3) {
+        font-size: 2em;
+      }
     }
   }
 }

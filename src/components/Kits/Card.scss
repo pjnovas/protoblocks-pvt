@@ -17,8 +17,21 @@
       text-decoration: none;
       cursor: pointer;
     }
-  }
 
+    @include susy-media(0 $bp-small-2) {
+      font-size: 1.5em;
+      margin-top: 10px;
+      padding-left: 10px;
+
+      .buy {
+        font-size: 0.8em;
+        float: right;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 3px 10px;
+      }
+    }
+  }
 
   .products {
     @include span(12);
@@ -31,6 +44,19 @@
     @include span(2);
     margin-right: span(0.5);
     position: relative;
+
+    @include susy-media(0 $bp-large-2) {
+      @include span(3);
+    }
+
+    @include susy-media(0 $bp-small-3) {
+      @include span(4);
+    }
+
+    @include susy-media(0 $bp-small-2) {
+      @include span(12);
+      margin: 1px 0;
+    }
 
     .qty {
       position: absolute;
@@ -45,6 +71,13 @@
       color: $color-font-dark;
       border: 4px solid $color-font-dark;
       box-shadow: none;
+
+      @include susy-media(0 $bp-small-2) {
+        bottom: 4px;
+        right: 7px;
+        font-size: 1.5em;
+        padding: 3px 7px;
+      }
     }
 
     .plus {
@@ -54,6 +87,16 @@
       font-size: 3em;
       color: $color-font-dark;
       font-weight: 800;
+
+      @include susy-media(0 $bp-large-2) {
+        right: -21%;
+        top: 30%;
+        font-size: 2.5em;
+      }
+
+      @include susy-media(0 $bp-small-2) {
+        display: none;
+      }
     }
 
     &:last-child {

@@ -1,7 +1,17 @@
 @import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
 
 .item {
   @include span(3);
   margin-top: 10px;
   margin-bottom: 10px;
+
+  @include susy-media(0 $bp-med-2) {
+    @include span(6);
+  }
+
+  @include susy-media(0 $bp-small-2) {
+    @include span(12);
+    margin: 1px 0;
+  }
 }

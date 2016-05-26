@@ -15,6 +15,16 @@
     font-size: 1.5em;
   }
 
+  @include susy-media(0 $bp-med) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    .productsIntro {
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
+
   .wrap {
     @include container($max-container);
   }

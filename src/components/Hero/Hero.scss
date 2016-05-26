@@ -33,12 +33,34 @@
       height: 155px;
       display: block;
       margin: 40px auto;
+
+      @include susy-media(0 $bp-med-2) {
+        width: 400px;
+        height: 115px;
+        margin: 5% auto;
+      }
+
+      @include susy-media(0 $bp-small-2) {
+        width: 200px;
+        height: 70px;
+        margin: 2% auto;
+      }
     }
 
     p {
       font-size: 4em;
       text-align: center;
       font-weight: 400;
+
+      @include susy-media(0 $bp-med-2) {
+        font-size: 3em;
+        margin: 5% 0;
+      }
+
+      @include susy-media(0 $bp-small-2) {
+        font-size: 2em;
+        margin: 2% 0;
+      }
     }
   }
 
@@ -58,6 +80,11 @@
       border-radius: 50%;
       cursor: pointer;
       font-size: 2.5em;
+
+      @include susy-media(0 $bp-med-2) {
+        padding: 9px 8px;
+        font-size: 2em;
+      }
 
       &:hover {
         background: $color-back-action;

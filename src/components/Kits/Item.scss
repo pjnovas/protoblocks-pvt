@@ -1,6 +1,13 @@
 @import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
 
 .item {
   @include span(12);
   margin-bottom: 20px;
+
+  @include susy-media(0 $bp-small-2) {
+    &:nth-child(odd) {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
 }

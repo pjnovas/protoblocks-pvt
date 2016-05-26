@@ -18,9 +18,31 @@
     margin: 0;
     font-size: 1.5em;
     margin-bottom: 20px;
+
+    @include susy-media(0 $bp-small-2) {
+      padding-top: 20px;
+    }
+  }
+
+  @include susy-media(0 $bp-med) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    .intro {
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
+
+  @include susy-media(0 $bp-small-2) {
+    padding: 0;
   }
 
   .cards {
     @include span(12);
+
+    @include susy-media(0 $bp-small-2) {
+      padding: 0;
+    }
   }
 }

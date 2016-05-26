@@ -8,6 +8,11 @@
 
   background-color: $color-back-intro;
 
+  @include susy-media(0 $bp-xl) {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
   .wrap {
     @include container($max-container);
   }
@@ -15,8 +20,26 @@
   .item {
     @include span(12);
 
+    @include susy-media(0 $bp-xl) {
+      padding-bottom: 10px;
+
+      &:nth-child(even){
+        background: rgba(0,0,0,0.1);
+      }
+    }
+
     h3 {
       font-size: 2em;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      @include susy-media(0 $bp-med-2) {
+        text-align: center;
+      }
+
+      @include susy-media(0 $bp-small-3) {
+        font-size: 1.8em;
+      }
     }
 
     .pics {
@@ -24,6 +47,11 @@
       margin-left: span(0.5);
       position: relative;
       height: span(2);
+
+      @include susy-media(0 $bp-med-2) {
+        @include span(12);
+        margin-left: 0;
+      }
     }
 
     .img {
@@ -42,6 +70,17 @@
       @include span(10);
       margin-left: span(0.5);
       font-size: 1.5em;
+      padding-top: 10px;
+
+      @include susy-media(0 $bp-med-2) {
+        @include span(12);
+        margin-left: 0;
+        text-align: center;
+      }
+
+      @include susy-media(0 $bp-small-3) {
+        font-size: 1.2em;
+      }
     }
 
     &:nth-child(1) {
@@ -50,12 +89,26 @@
         .img {
           @include span(5);
 
+          @include susy-media(0 $bp-med-2) {
+            @include span(6);
+          }
+
+          @include susy-media(0 $bp-small-3) {
+            @include span(12);
+          }
+
           &:nth-child(1){
             background-image: url("./landing_simple_0.jpg");
             position: relative;
 
             border-radius: 4px 0 0 4px;
             border-right: none;
+
+            @include susy-media(0 $bp-small-3) {
+              border-radius: 4px 4px 0 0;
+              border-right: 2px solid $color-back-light;;
+              border-bottom: none;
+            }
 
             .arrow {
               position: absolute;
@@ -67,12 +120,30 @@
                 color: $color-font-light;
                 font-size: 3em;
               }
+
+              @include susy-media(0 $bp-small-3) {
+                left: 40%;
+                bottom: -20%;
+                right: initial;
+                top: initial;
+                transform: rotateZ(90deg);
+                font-size: 4em;
+
+                i {
+                  color: $color-font-light;
+                  font-size: 1em;
+                }
+              }
             }
           }
 
           &:nth-child(2){
             background-image: url("./landing_simple_1.jpg");
             border-radius: 0 4px 4px 0;
+
+            @include susy-media(0 $bp-small-3) {
+              border-radius: 0 0 4px 4px;
+            }
           }
         }
 
@@ -84,11 +155,27 @@
 
         .img {
           @include span(4);
+          height: 170px;
+
+          @include susy-media(0 $bp-med-2) {
+            height: 130px;
+          }
+
+          @include susy-media(0 $bp-small-3) {
+            @include span(12);
+            height: 200px;
+          }
 
           &:nth-child(1){
             background-image: url("./landing_order_0.jpg");
             border-radius: 4px 0 0 4px;
             border-right: none;
+
+            @include susy-media(0 $bp-small-3) {
+              border-radius: 4px 4px 0 0;
+              border-right: 2px solid $color-back-light;;
+              border-bottom: none;
+            }
           }
 
           &:nth-child(2){
@@ -100,6 +187,12 @@
             background-image: url("./landing_order_2.jpg");
             border-radius: 0 4px 4px 0;
             border-left: none;
+
+            @include susy-media(0 $bp-small-3) {
+              border-radius: 0 0 4px 4px;
+              border-left: 2px solid $color-back-light;;
+              border-top: none;
+            }
           }
         }
 
@@ -110,15 +203,39 @@
       .pics {
         @include span(4);
 
+        @include susy-media(0 $bp-small-3) {
+          @include span(12);
+        }
+
         .img {
           @include span(12);
           height: 250px;
           background-image: url("./landing_attach.jpg");
+
+          @include susy-media(0 $bp-xl) {
+            height: 200px;
+          }
+
+          @include susy-media(0 $bp-med-2) {
+            height: 150px;
+          }
+
+          @include susy-media(0 $bp-small-3) {
+            height: 250px;
+          }
         }
       }
 
       .body {
         @include span(6);
+
+        @include susy-media(0 $bp-med-2) {
+          @include span(8);
+        }
+
+        @include susy-media(0 $bp-small-3) {
+          @include span(12);
+        }
       }
     }
 

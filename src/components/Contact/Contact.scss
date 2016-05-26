@@ -42,4 +42,23 @@
     font-size: 1.5em;
   }
 
+  @include susy-media(0 $bp-xl) {
+    .side {
+      @include span(12);
+    }
+
+    .info {
+      margin-top: 0;
+    }
+
+    .iconHolder {
+      //@include span(6);
+      text-align: center;
+    }
+
+    p {
+      //@include span(6);
+    }
+  }
+
 }
