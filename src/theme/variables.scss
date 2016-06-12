@@ -1,5 +1,5 @@
 $color-action: #2B6784;
-$color-secondary: #7FC342;
+$color-secondary: #3FBF3F;
 
 $color-dark: #4E4E4E;
 $color-light: #FFFFFF;
@@ -14,6 +14,7 @@ $color-back-dark: darken($color-back-action, 20%);
 
 $color-back-intro: $color-back-action;
 $color-back-input: darken($color-back-action, 12%);
+$color-separator: $color-back-action;
 
 $color-font-dark: $color-dark;
 $color-font-light: $color-light;

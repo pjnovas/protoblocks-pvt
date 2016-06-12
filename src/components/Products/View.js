@@ -59,11 +59,11 @@ export default class ProductView extends Component {
   }
 
   render() {
-    const { title, tab, details } = this.props;
+    const { title, /*tab,*/ details, link } = this.props;
     const styles = require('./View.scss');
 
     const images = this.getImages();
-    const tabs = this.getTabs();
+    //const tabs = this.getTabs();
 
     return (
       <div>
@@ -73,12 +73,18 @@ export default class ProductView extends Component {
 
             <div className={styles.header}>
               <h3 className={styles.name}>{title}</h3>
+              <div className={styles.buy}>
+                <a href={link} target="_blank">Comprar</a>
+              </div>
+              <div className={styles.description}>
+                <p>{details}</p>
+              </div>
             </div>
 
             <div className={styles.slider}>
               <ImageGallery lazyLoad items={images}/>
             </div>
-
+{/*
             <div className={styles.description}>
               {tabs}
 
@@ -101,7 +107,7 @@ export default class ProductView extends Component {
               </div>
 
             </div>
-
+*/}
           </div>
         </div>
       </div>

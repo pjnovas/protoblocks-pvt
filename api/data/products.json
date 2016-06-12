@@ -5,7 +5,7 @@
     "name": "Starter",
     "title": "Arduino Starter",
     "link": "http://google.com",
-    "details": "Arduino Starter es un módulo creado para soportar Arduino Uno y Mega.\n\n Viene en color azul etc etc",
+    "details": "Módulo para Arduino Uno, 101 y Leonardo.\nColor celeste con 4 tornillos.\n Medidas: 93mm (largo) x 75.5mm (ancho) x 7mm (alto sin placa)",
     "photos": 4
 }, {
     "id": "arduino-expert",
@@ -14,7 +14,7 @@
     "name": "Expert",
     "title": "Arduino Expert",
     "link": "http://google.com",
-    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "details": "Módulo para Arduino Uno, 101, Leonardo, Mega R3 y Due.\nColor celeste con 6 tornillos.\n Medidas: 128mm (largo) x 75,5mm (ancho) x 7mm (alto sin placa)",
     "photos": 4
 }, {
     "id": "raspberry-pi",
@@ -23,7 +23,7 @@
     "name": "Raspberry PI",
     "title": "Raspberry PI",
     "link": "http://google.com",
-    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "details": "Módulo para Raspberry PI, Modelos: A+ y B generación 1+ 2 y 3 (no apto para generación 1).\nColor rojo con 4 tornillos.\n Medidas: 93mm (largo) x 75,5mm (ancho) x 7mm (alto sin placa)",
     "photos": 4
 }, {
     "id": "protoboard",
@@ -31,7 +31,7 @@
     "name": "Protoboard",
     "title": "Protoboard",
     "link": "http://google.com",
-    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "details": "Módulo para Protoboard de 400 puntos, o bien 830 puntos utilizando 2 módulos.\nColor blanco.\n Medidas: 93mm (largo) x 75,5mm (ancho) x 10,5mm (alto sin protoboard)",
     "photos": 7
 }, {
     "id": "terminal",
@@ -39,7 +39,7 @@
     "name": "Terminales",
     "title": "Terminales",
     "link": "http://google.com",
-    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "details": "Módulo con conectores banana (rojo y negro) ideal para utilizar como fuente de protobard.\nColor blanco.\n Medidas: 41mm (largo) x 41mm (ancho) x 18mm (alto con connectores)",
     "photos": 4
 }, {
     "id": "cables",
@@ -47,6 +47,6 @@
     "name": "Organizador de Cables",
     "title": "Cableado",
     "link": "http://google.com",
-    "details": "lkans dkjnas dkjnbewf hbashdb \n ansjdnak jsnd kajsnd",
+    "details": "Módulo para sujetar y organizar cables.\nColor naranja.\n Medidas: 93mm (largo) x 41mm (ancho) x 47mm (alto)",
     "photos": 2
 }]

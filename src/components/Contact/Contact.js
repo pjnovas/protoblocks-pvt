@@ -21,9 +21,9 @@ export default class Contact extends Component {
               <Icon name="chat" />
             </div>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vestibulum euismod facilisis urna vel luctus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Tu opinión nos ayuda a mejorar. Utilizá este formulario para
+            contactarnos por lo que necesites, desde dejarnos tu opinión
+            hasta hacer una consulta o pedido.
             </p>
           </div>
           <div className={styles.side}>

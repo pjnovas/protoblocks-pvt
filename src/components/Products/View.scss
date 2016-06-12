@@ -19,16 +19,47 @@ body {
   padding-bottom: 5px;
 
   .header {
-    //@include span(12);
     margin: 5px 10px;
+    position: relative;
 
     h3 {
-      color: #000;
+      color: $color-font-dark;
       margin: 0;
       font-size: 2em;
 
       text-transform: uppercase;
       font-weight: 100;
+
+      border-bottom: 2px solid $color-separator;
+      padding-bottom: 10px;
+    }
+
+    .buy {
+      position: absolute;
+      right: 10px;
+      top: 0px;
+      margin-right: 0;
+      padding: 7px 17px;
+      background-color: $color-secondary;
+
+      a {
+        font-size: 1.2em;
+        text-decoration: none;
+        color: $color-font-light;
+      }
+    }
+
+    .description {
+      color: $color-font-dark;
+      width: 100%;
+
+      p {
+        padding-bottom: 10px;
+
+        word-break: break-word;
+        word-wrap: break-word;
+        white-space: pre-line;
+      }
     }
   }
 
@@ -39,9 +70,10 @@ body {
 
 }
 
+/*
 .description {
   @include span(12);
-  color: #000;
+  color: $color-font-dark;
 
   ul {
     list-style: none;
@@ -55,10 +87,10 @@ body {
 
       a {
         padding: 7px 17px;
-        background-color: #fff;
+        background-color: $color-font-light;
         font-size: 1.2em;
         text-decoration: none;
-        color: #000;
+        color: $color-font-dark;
       }
 
       &.selected {
@@ -72,8 +104,8 @@ body {
         margin-right: 0;
 
         a {
-          background-color: #3FBF3F;
-          color: #fff;
+          background-color: $color-secondary;
+          color: $color-font-light;
         }
       }
     }
@@ -81,7 +113,7 @@ body {
 
   .tabs {
     @include span(12);
-    background-color: #fff;
+    background-color: $color-back-light;
   }
 
   .tab {
@@ -107,3 +139,4 @@ body {
     }
   }
 }
+*/

@@ -19,9 +19,8 @@ export default class Features extends Component {
               </div>
               <h4>Diseño Propio</h4>
               <div className={styles.body}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum euismod facilisis urna vel luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis imperdiet nulla lacus, ultrices rutrum est congue vitae.
+                La impresión 3D nos permite tener un diseño eficaz realizado enteramente
+                por nosotros para poder cubrir las necesidades del mercado.
               </div>
             </div>
 
@@ -31,9 +30,8 @@ export default class Features extends Component {
               </div>
               <h4>Versatilidad</h4>
               <div className={styles.body}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum euismod facilisis urna vel luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis imperdiet nulla lacus, ultrices rutrum est congue vitae.
+                Podemos crear nuevos módulos rápidamente o mejorar los existentes
+                en cualquier momento.
               </div>
             </div>
 
@@ -43,9 +41,8 @@ export default class Features extends Component {
               </div>
               <h4>Personalización</h4>
               <div className={styles.body}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum euismod facilisis urna vel luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Duis imperdiet nulla lacus, ultrices rutrum est congue vitae.
+                Queres cambiar el color de un módulo o agregar un logo para tu evento?,
+                todo esto es posible de forma simple.
               </div>
             </div>
 
