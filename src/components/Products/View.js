@@ -59,7 +59,7 @@ export default class ProductView extends Component {
   }
 
   render() {
-    const { title, /*tab,*/ details, link } = this.props;
+    const { title, /*tab,*/ details, support, additions, size, notIncluded, link } = this.props;
     const styles = require('./View.scss');
 
     const images = this.getImages();
@@ -77,7 +77,20 @@ export default class ProductView extends Component {
                 <a href={link} target="_blank">Comprar</a>
               </div>
               <div className={styles.description}>
-                <p>{details}</p>
+                {details && <p>{details}</p>}
+                {support && <p>Soporta {support} {notIncluded && '*'}</p>}
+                {additions && <p>Se entrega con {additions}</p>}
+                {size &&
+                  <div>
+                    <h4>Medidas:</h4>
+                    <ul>
+                      <li>Largo: {size.long}mm.</li>
+                      <li>Ancho: {size.wide}mm.</li>
+                      <li>Alto: {size.tall}mm.</li>
+                    </ul>
+                  </div>
+                }
+                {notIncluded && <p style={{'font-style': 'italic'}}>* No incluye {notIncluded}</p>}
               </div>
             </div>
 
@@ -121,6 +134,14 @@ ProductView.propTypes = {
   title: PropTypes.string,
   details: PropTypes.string,
   photos: PropTypes.number,
+  support: PropTypes.string,
+  additions: PropTypes.string,
+  size: PropTypes.shape({
+    long: PropTypes.number,
+    wide: PropTypes.number,
+    tall: PropTypes.number
+  }),
+  notIncluded: PropTypes.string,
   link: PropTypes.string,
   tab: PropTypes.oneOf([ 'details', 'info', 'contact' ])
 };

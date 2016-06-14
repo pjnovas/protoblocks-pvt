@@ -5,7 +5,15 @@
     "name": "Starter",
     "title": "Arduino Starter",
     "link": "http://google.com",
-    "details": "Módulo para Arduino Uno, 101 y Leonardo.\nColor celeste con 4 tornillos.\n Medidas: 93mm (largo) x 75.5mm (ancho) x 7mm (alto sin placa)",
+    "details": "",
+    "support": "Arduino Uno, 101 y Leonardo",
+    "additions": "4 tornillos",
+    "notIncluded": "Arduino",
+    "size": {
+      "long": 93,
+      "wide": 75.5,
+      "tall": 7
+    },
     "photos": 4
 }, {
     "id": "arduino-expert",
@@ -14,7 +22,15 @@
     "name": "Expert",
     "title": "Arduino Expert",
     "link": "http://google.com",
-    "details": "Módulo para Arduino Uno, 101, Leonardo, Mega R3 y Due.\nColor celeste con 6 tornillos.\n Medidas: 128mm (largo) x 75,5mm (ancho) x 7mm (alto sin placa)",
+    "details": "",
+    "support": "Arduino Uno, 101, Leonardo, Mega R3 y Due",
+    "additions": "6 tornillos",
+    "notIncluded": "Arduino",
+    "size": {
+      "long": 128,
+      "wide": 75.5,
+      "tall": 7
+    },
     "photos": 4
 }, {
     "id": "raspberry-pi",
@@ -23,7 +39,15 @@
     "name": "Raspberry PI",
     "title": "Raspberry PI",
     "link": "http://google.com",
-    "details": "Módulo para Raspberry PI, Modelos: A+ y B generación 1+ 2 y 3 (no apto para generación 1).\nColor rojo con 4 tornillos.\n Medidas: 93mm (largo) x 75,5mm (ancho) x 7mm (alto sin placa)",
+    "details": "",
+    "support": "Raspberry PI A+ y B generaciones 1+ 2 y 3 (no apto para generación 1)",
+    "additions": "4 tornillos",
+    "notIncluded": "Raspberry PI",
+    "size": {
+      "long": 93,
+      "wide": 75.5,
+      "tall": 7
+    },
     "photos": 4
 }, {
     "id": "protoboard",
@@ -31,7 +55,15 @@
     "name": "Protoboard",
     "title": "Protoboard",
     "link": "http://google.com",
-    "details": "Módulo para Protoboard de 400 puntos, o bien 830 puntos utilizando 2 módulos.\nColor blanco.\n Medidas: 93mm (largo) x 75,5mm (ancho) x 10,5mm (alto sin protoboard)",
+    "details": "",
+    "support": "Protoboard de 400 puntos, o bien 830 puntos utilizando 2 módulos",
+    "additions": "",
+    "notIncluded": "Protoboard",
+    "size": {
+      "long": 93,
+      "wide": 75.5,
+      "tall": 10.5
+    },
     "photos": 7
 }, {
     "id": "terminal",
@@ -39,7 +71,15 @@
     "name": "Terminales",
     "title": "Terminales",
     "link": "http://google.com",
-    "details": "Módulo con conectores banana (rojo y negro) ideal para utilizar como fuente de protobard.\nColor blanco.\n Medidas: 41mm (largo) x 41mm (ancho) x 18mm (alto con connectores)",
+    "details": "Módulo ideal para utilizar como fuente de protobard.",
+    "support": "",
+    "additions": "conectores banana instalados (rojo y negro)",
+    "notIncluded": "",
+    "size": {
+      "long": 41,
+      "wide": 41,
+      "tall": 18
+    },
     "photos": 4
 }, {
     "id": "cables",
@@ -47,6 +87,14 @@
     "name": "Organizador de Cables",
     "title": "Cableado",
     "link": "http://google.com",
-    "details": "Módulo para sujetar y organizar cables.\nColor naranja.\n Medidas: 93mm (largo) x 41mm (ancho) x 47mm (alto)",
+    "details": "Módulo para sujetar y organizar cables.",
+    "support": "",
+    "additions": "",
+    "notIncluded": "",
+    "size": {
+      "long": 93,
+      "wide": 41,
+      "tall": 47
+    },
     "photos": 2
 }]
