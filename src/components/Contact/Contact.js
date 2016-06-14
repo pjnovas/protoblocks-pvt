@@ -21,7 +21,7 @@ export default class Contact extends Component {
               <Icon name="chat" />
             </div>
             <p>
-            Tu opinión nos ayuda a mejorar. Utilizá este formulario para
+            Tu opinión nos ayuda a mejorar. Utiliza este formulario para
             contactarnos por lo que necesites, desde dejarnos tu opinión
             hasta hacer una consulta o pedido.
             </p>

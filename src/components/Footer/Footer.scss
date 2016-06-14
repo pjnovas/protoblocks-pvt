@@ -4,13 +4,44 @@
 .footer {
   @include span(12);
   float: none;
-  padding-top: 30px;
-  padding-bottom: 60px;
-
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: $color-back-dark;
-  min-height: 200px;
 
   .wrap {
     @include container($max-container);
+    position: relative;
+  }
+
+  .logo {
+    width: 200px;
+    height: 60px;
+    display: block;
+    margin: 10px;
+  }
+
+  .goTop {
+    a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-align: center;
+      z-index: 2;
+      width: 60px;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 2em;
+
+      background: $color-back-action;
+      color: $color-font-light;
+
+      @include susy-media(0 $bp-med-2) {
+        right: 20px;
+      }
+
+      &:hover {
+        background: lighten($color-back-action, 10%);
+      }
+    }
   }
 }

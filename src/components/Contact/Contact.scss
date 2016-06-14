@@ -12,6 +12,11 @@
   background-color: darken($color-light, 10%);
   color: $color-font-dark;
 
+  @include susy-media(0 $bp-small-3) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .wrap {
     @include container($max-container);
   }
@@ -20,6 +25,12 @@
     margin: 0;
     font-size: 2em;
     margin-bottom: 20px;
+
+    @include susy-media(0 $bp-small-3) {
+      margin-bottom: 0px;
+      margin-top: 0px;
+      text-align: center;
+    }
   }
 
   .side {
@@ -35,11 +46,21 @@
     font-size: 10em;
     padding-top: 10px;
     text-indent: -5%;
+
+    @include susy-media(0 $bp-small-3) {
+      display: none;
+    }
   }
 
   p {
     @include span(8);
     font-size: 1.5em;
+
+    @include susy-media(0 $bp-small-3) {
+      @include span(12);
+      margin: 5px;
+      font-size: 1.2em;
+    }
   }
 
   @include susy-media(0 $bp-xl) {

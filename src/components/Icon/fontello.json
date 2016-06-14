@@ -71,6 +71,12 @@
       "css": "ok",
       "code": 59402,
       "src": "websymbols"
+    },
+    {
+      "uid": "fe6697b391355dec12f3d86d6d490397",
+      "css": "up-open",
+      "code": 59403,
+      "src": "fontawesome"
     }
   ]
 }

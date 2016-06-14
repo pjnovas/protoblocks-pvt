@@ -9,7 +9,7 @@
   }
 
   .control {
-    @include span(8);
+    @include span(12);
     margin-top: 10px;
   }
 
@@ -28,7 +28,7 @@
   }
 
   .buttons {
-    @include span(8);
+    @include span(12);
 
     a {
       @include span(3 last);

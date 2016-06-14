@@ -27,7 +27,8 @@ import Kits from './Kits';
 
 import {
   Element,
-  scroller
+  scroller,
+  animateScroll
 } from 'react-scroll';
 
 
@@ -70,6 +71,15 @@ export default class Home extends Component {
   }
 
   goTo(element, options) {
+    if (!isNaN(element)) {
+      animateScroll.scrollTo(element, Object.assign({
+        duration: 1500,
+        smooth: true
+      }, options));
+
+      return;
+    }
+
     scroller.scrollTo(element, Object.assign({
       duration: 1500,
       smooth: true
@@ -91,32 +101,8 @@ export default class Home extends Component {
         <Kits />
         <Features />
         <Contact />
-        <Footer />
+        <Footer onGoTop={ () => this.goTo(0) }/>
       </div>
     );
   }
 }
-
-/*
-
-return (
-  <div className={styles.home}>
-    <Helmet title="Home"/>
-    <div className={styles.masthead}>
-      <div className="container">
-        <div className={styles.logo}>
-          <p>
-            <img src={logoImage}/>
-          </p>
-        </div>
-        <h1>{config.app.title}</h1>
-        <h2>{config.app.description}</h2>
-      </div>
-    </div>
-
-    <div className="container">
-
-    </div>
-  </div>
-);
-*/
