@@ -1,23 +1,23 @@
-const isEmpty = value => value === undefined || value === null || value === '';
+const isEmpty = value => value === undefined || value === null || value === '' || !value.trim().length;
 const join = (rules) => (value, data) => rules.map(rule => rule(value, data)).filter(error => !!error)[0 /* first error */ ];
 
 export function email(value) {
   // Let's not start a debate on email regex. This is just for an example app!
   if (!isEmpty(value) && !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-    return 'Invalid email address';
+    return 'Email inválido';
   }
 }
 
 export function required(value) {
   if (isEmpty(value)) {
-    return 'Required';
+    return 'Requerido';
   }
 }
 
 export function minLength(min) {
   return value => {
     if (!isEmpty(value) && value.length < min) {
-      return `Must be at least ${min} characters`;
+      return `Debe tener al menos ${min} caracteres`;
     }
   };
 }
@@ -25,21 +25,21 @@ export function minLength(min) {
 export function maxLength(max) {
   return value => {
     if (!isEmpty(value) && value.length > max) {
-      return `Must be no more than ${max} characters`;
+      return `Máximo ${max} caracteres`;
     }
   };
 }
 
 export function integer(value) {
   if (!Number.isInteger(Number(value))) {
-    return 'Must be an integer';
+    return 'Debe ser un número entero';
   }
 }
 
 export function oneOf(enumeration) {
   return value => {
     if (!~enumeration.indexOf(value)) {
-      return `Must be one of: ${enumeration.join(', ')}`;
+      return `Debe ser uno de: ${enumeration.join(', ')}`;
     }
   };
 }
@@ -48,7 +48,7 @@ export function match(field) {
   return (value, data) => {
     if (data) {
       if (value !== data[field]) {
-        return 'Do not match';
+        return 'No concuerda';
       }
     }
   };

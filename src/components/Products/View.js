@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
+//import { Link } from 'react-router';
 import ImageGallery from './ImageGallery';
 import NavBar from '../NavBar/NavBar';
 
@@ -31,6 +31,17 @@ export default class ProductView extends Component {
     return images;
   }
 
+  getColor(family) {
+    switch (family) {
+      case 'lightblue': return 'celeste';
+      case 'red': return 'rojo';
+      case 'white': return 'blanco';
+      case 'orange': return 'naranja';
+      default: return '';
+    }
+  }
+
+/*
   getTabs() {
     const { id, tab, link } = this.props;
     const styles = require('./View.scss');
@@ -57,9 +68,10 @@ export default class ProductView extends Component {
       </ul>
     );
   }
-
+*/
   render() {
-    const { title, /*tab,*/ details, support, additions, size, notIncluded, link } = this.props;
+    const { title, /*tab, family,*/
+      details, support, additions, size, notIncluded, link } = this.props;
     const styles = require('./View.scss');
 
     const images = this.getImages();
@@ -80,6 +92,7 @@ export default class ProductView extends Component {
                 {details && <p>{details}</p>}
                 {support && <p>Soporta {support} {notIncluded && '*'}</p>}
                 {additions && <p>Se entrega con {additions}</p>}
+                {/*family && <p>Color: {this.getColor(family)}</p>*/}
                 {size &&
                   <div>
                     <h4>Medidas:</h4>

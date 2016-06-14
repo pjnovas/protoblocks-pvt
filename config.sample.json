@@ -1,0 +1,15 @@
+{
+  "mailer": {
+    "emails": {
+      "from": "inbox_as_sender_[or null to use sender email]@example.com",
+      "to": "inbox_to_get_contact@example.com"
+    },
+    "transport": {
+      "service": "Mailgun",
+      "auth": {
+        "user": "postmaster@sandboxxxxxxxxxx.mailgun.org",
+        "pass": "e987654"
+      }
+    }
+  }
+}

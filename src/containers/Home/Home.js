@@ -18,12 +18,12 @@ import {
   Intro,
   SubHero,
   Features,
-  Contact,
   Footer
 } from '../../components';
 
 import Products from './Products';
 import Kits from './Kits';
+import Contact from './Contact';
 
 import {
   Element,

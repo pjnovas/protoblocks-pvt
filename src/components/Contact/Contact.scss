@@ -73,13 +73,91 @@
     }
 
     .iconHolder {
-      //@include span(6);
       text-align: center;
-    }
-
-    p {
-      //@include span(6);
     }
   }
 
+}
+
+.contactForm {
+  @include span(12);
+
+  .formBody {
+    @include span(12);
+  }
+
+  .control {
+    @include span(12);
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .fieldError {
+    font-size: 1em;
+    color: $color-font-error;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+
+    &.underlined {
+      top: initial;
+      right: initial;
+      bottom: -20px;
+      left: 10px;
+    }
+  }
+
+  input,
+  textarea {
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: $color-back-input;
+    color: $color-font-light;
+    border: none;
+  }
+
+  textarea {
+    height: 120px;
+    resize: vertical;
+  }
+
+  .buttons {
+    @include span(12);
+
+    a {
+      @include span(3 last);
+
+      background-color: $color-back-action;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: $color-font-light;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.thanks, .sendError {
+  @include span(12);
+  background-color: lighten($color-secondary, 30%);
+  border-radius: 6px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  p {
+    @include span(12);
+    margin: 8px;
+  }
+}
+
+.sendError {
+  @include span(12);
+  background-color: lighten($color-danger, 23%);
+
+  p {
+    font-size: 1.4em;
+  }
 }
