@@ -6,9 +6,6 @@ export function getProducts() {
 
 export default function load(req) {
   return new Promise((resolve) => {
-    // make async call to database
-    setTimeout(() => {
-      resolve(getProducts(req));
-    }, 1000); // simulate async load
+    resolve(getProducts(req));
   });
 }

@@ -90,14 +90,19 @@
   }
 
   .body {
-    img {
+    .picture {
       width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @include susy-media(0 $bp-small-2) {
       @include span(2);
 
-      img {
+      .picture {
         margin-top: 5px;
       }
     }

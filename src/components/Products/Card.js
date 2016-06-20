@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import Image360 from '../Image360/Image360';
 
 export default class Product extends Component {
   render() {
@@ -10,6 +11,10 @@ export default class Product extends Component {
       ctnStyles += ' ' + styles.kit;
     }
 
+    const imgFile = `/images/products/${id.replace('-', '_')}`;
+    const imgBase = imgFile + '_s.png';
+    const imgSprite = imgFile + '.jpg';
+
     return (
       <div className={ctnStyles}>
 
@@ -18,7 +23,8 @@ export default class Product extends Component {
         </div>
 
         <div className={styles.body}>
-          <img src={`/images/products/${id.replace('-', '_')}_s.png`} />
+          <Image360 base={imgBase} sprite={imgSprite} sprites={15}
+           spriteHeight={202} styles={styles.picture} noSprite={kit}/>
         </div>
 
         <div className={styles.header + ' ' + styles.mobileTitle}>
