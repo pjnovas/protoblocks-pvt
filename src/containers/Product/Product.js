@@ -47,15 +47,18 @@ export default class Home extends Component {
     }
 
     const product = products[params.pid];
-    const desc = product.details || `Módulo ideal para ${product.support}`;
+    const baseDesc = config.app.description;
+    const desc = product.details || `Módulo ideal para ${product.support}.\n${baseDesc}`;
 
     const meta = [
       { name: 'description', content: desc },
+      { property: 'og:description', content: desc },
       { property: 'og:type', content: 'product' },
       { property: 'og:image', content: `${config.imagesBase}/products/${product.id.replace('-', '_')}_s.png` },
       { property: 'og:image:width', content: 300 },
       { property: 'og:image:height', content: 202 },
-      { name: 'twitter:card', content: 'product' }
+      { name: 'twitter:card', content: 'product' },
+      { property: 'og:title', content: `${product.title} - ProtoBlocks`},
     ];
 
     return (
