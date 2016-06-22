@@ -5,7 +5,11 @@ const environment = {
     isProduction: false
   },
   production: {
-    isProduction: true
+    isProduction: true,
+    host: 'protoblocks.com.ar',
+    port: 80,
+    apiHost: 'api.protoblocks.com.ar',
+    apiPort: 80
   }
 }[process.env.NODE_ENV || 'development'];
 
