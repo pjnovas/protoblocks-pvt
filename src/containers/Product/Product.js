@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import Helmet from 'react-helmet';
 import { asyncConnect } from 'redux-async-connect';
 import { connect } from 'react-redux';
+import config from '../../config';
 
 import {
   isLoaded as isLoadedProducts,
@@ -46,10 +47,15 @@ export default class Home extends Component {
     }
 
     const product = products[params.pid];
+    const desc = product.details || `Módulo ideal para ${product.support}`;
 
     const meta = [
-      { name: 'description', content: product.description },
-      { property: 'og:type', content: 'product' }
+      { name: 'description', content: desc },
+      { property: 'og:type', content: 'product' },
+      { property: 'og:image', content: `${config.imagesBase}/products/${product.id.replace('-', '_')}_s.png` },
+      { property: 'og:image:width', content: 300 },
+      { property: 'og:image:height', content: 202 },
+      { name: 'twitter:card', content: 'product' }
     ];
 
     return (

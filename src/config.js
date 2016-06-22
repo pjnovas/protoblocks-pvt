@@ -14,26 +14,28 @@ module.exports = Object.assign({
   port: process.env.PORT,
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
+  imagesBase: 'http://protoblocks.com.ar/images',
   app: {
     title: 'ProtoBlocks',
-    description: 'ProtoBlocks Desc.',
+    description: 'Prototipos modulares, con el sistema de los módulos ProtoBlocks ahora podes tener tus prototipos ordenados.',
     head: {
-      titleTemplate: 'ProtoBlocks %s',
+      titleTemplate: '%s ProtoBlocks',
       meta: [
-        {name: 'description', content: 'ProtoBlocks Desc.'},
+        {name: 'description', content: 'Prototipos modulares, con el sistema de los módulos ProtoBlocks ahora podes tener tus prototipos ordenados.'},
+        {property: 'og:description', content: 'Prototipos modulares, con el sistema de los módulos ProtoBlocks ahora podes tener tus prototipos ordenados.'},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: 'ProtoBlocks'},
-        {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
-        {property: 'og:locale', content: 'en_US'},
+        {property: 'og:image', content: 'http://protoblocks.com.ar/logo.jpg'},
+        {property: 'og:locale', content: 'es_AR'},
         {property: 'og:title', content: 'ProtoBlocks'},
-        {property: 'og:description', content: 'ProtoBlocks Desc.'},
         {property: 'og:card', content: 'summary'},
-        {property: 'og:site', content: '@protoblocksar'},
+        {property: 'og:site_name', content: 'ProtoBlocks'},
         {property: 'og:creator', content: '@protoblocksar'},
         {property: 'og:image:width', content: '200'},
-        {property: 'og:image:height', content: '200'}
+        {property: 'og:image:height', content: '200'},
+        {name: 'twitter:card', content: 'summary'},
+        {name: 'twitter:site', content: '@ProtoBlocksAR'}
       ]
     }
   },
-
 }, environment);

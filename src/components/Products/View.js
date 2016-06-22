@@ -103,7 +103,7 @@ export default class ProductView extends Component {
                     </ul>
                   </div>
                 }
-                {notIncluded && <p style={{'font-style': 'italic'}}>* No incluye {notIncluded}</p>}
+                {notIncluded && <p style={{'fontStyle': 'italic'}}>* No incluye {notIncluded}</p>}
               </div>
             </div>
 
