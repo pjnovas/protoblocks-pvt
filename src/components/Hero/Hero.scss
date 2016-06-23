@@ -8,6 +8,16 @@
 
   height: 100vh;
   background-image: url('./top.jpg');
+
+  @include susy-media(0 $bp-med-2) {
+    background-attachment: initial;
+    background-image: initial;
+
+    &:before {
+      background-image: url('./top.jpg');
+    }
+  }
+
   position: relative;
 
   .overlay {
