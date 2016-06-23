@@ -52,7 +52,7 @@ export default class Contact extends Component {
     if (sendError) {
       return (
         <div className={styles.sendError}>
-          <p>Estamos teniendo problemas con el formulario.</p>
+          <p>Tenemos problemas con el formulario.</p>
           <p>Por favor, contactanos por las redes sociales.</p>
           <p>Gracias.</p>
         </div>
@@ -107,7 +107,7 @@ export default class Contact extends Component {
     return (
       <div className={styles.thanks}>
         <p>Gracias por contactarnos <b>{name}</b>!</p>
-        <p>Te responderemos via email lo antes posible</p>
+        <p>Te responderemos vía email lo antes posible</p>
         <p>Saludos</p>
       </div>
     );

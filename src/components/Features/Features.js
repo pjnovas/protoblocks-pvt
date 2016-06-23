@@ -28,7 +28,7 @@ export default class Features extends Component {
               <div className={styles.iconHolder}>
                 <Icon name="shuffle" />
               </div>
-              <h4>Versatilidad</h4>
+              <h4>Versátil</h4>
               <div className={styles.body}>
                 Podemos crear nuevos módulos rápidamente o mejorar los existentes
                 en cualquier momento.
@@ -39,10 +39,10 @@ export default class Features extends Component {
               <div className={styles.iconHolder}>
                 <Icon name="cog-alt" />
               </div>
-              <h4>Personalización</h4>
+              <h4>Personalizado</h4>
               <div className={styles.body}>
-                Queres cambiar el color de un módulo o agregar un logo para tu evento?,
-                todo esto es posible de forma simple.
+                Tenemos la posibilidad de agregados y modificaciones en los módulos,
+                como otro color ó agregar un logo para tu evento de forma sencilla.
               </div>
             </div>
 

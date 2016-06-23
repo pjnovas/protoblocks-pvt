@@ -7,10 +7,7 @@ export default class ProductsList extends Component {
     return (
       <div className={styles.products}>
         <div className={styles.wrap}>
-          <p className={styles.productsIntro}>
-            Nuestros módulos para todo tipo de prototipos electrónicos.
-          </p>
-
+          <p className={styles.productsIntro}></p>
           <div>{this.props.children}</div>
         </div>
       </div>

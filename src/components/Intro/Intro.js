@@ -11,7 +11,7 @@ export default class Intro extends Component {
         <div className={styles.wrap}>
 
           <div className={styles.item}>
-            <h3>Creá prototipos ordenadamente</h3>
+            <h3>Crea prototipos ordenadamente</h3>
             <div className={styles.pics}>
               <div className={styles.img}>
                 <div className={styles.arrow}>
