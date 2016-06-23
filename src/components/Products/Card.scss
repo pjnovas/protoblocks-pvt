@@ -4,10 +4,24 @@
 .content {
   @include span(12);
   padding: 5px 10px;
+  position: relative;
+
+  .more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    padding: 5px 10px;
+    font-size: 1.3em;
+  }
 
   &.lightblue {
     background-color: $color-type-lightblue;
     color: $color-font-light;
+
+    .more {
+      background-color: $color-type-lightblue;
+    }
 
     .header {
       h3 {
@@ -20,6 +34,10 @@
     background-color: $color-type-red;
     color: $color-font-light;
 
+    .more {
+      background-color: $color-type-red;
+    }
+
     .header {
       h3 {
         background-color: $color-type-red;
@@ -31,6 +49,10 @@
     background-color: $color-type-white;
     color: $color-font-light;
 
+    .more {
+      background-color: $color-type-white;
+    }
+
     .header {
       h3 {
         background-color: $color-type-white;
@@ -39,12 +61,16 @@
   }
 
   &.orange {
-    background-color: $orange-type-orange;
+    background-color: $color-type-orange;
     color: $color-font-light;
+
+    .more {
+      background-color: $color-type-orange;
+    }
 
     .header {
       h3 {
-        background-color: $orange-type-orange;
+        background-color: $color-type-orange;
       }
     }
   }
@@ -114,6 +140,10 @@
 
     @include susy-media(0 $bp-small-2) {
       @include span(12);
+    }
+
+    .more {
+      display: none;
     }
 
     .header {

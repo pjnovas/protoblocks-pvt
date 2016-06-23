@@ -30,6 +30,8 @@ export default class Product extends Component {
         <div className={styles.header + ' ' + styles.mobileTitle}>
           <h3 className={styles.name}>{title}</h3>
         </div>
+
+        <div className={styles.more}>+ info</div>
       </div>
     );
   }
