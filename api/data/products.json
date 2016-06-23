@@ -96,5 +96,21 @@
       "wide": 41,
       "tall": 47
     },
-    "photos": 2
+    "photos": 6
+}, {
+    "id": "box",
+    "family": "orange",
+    "name": "Caja",
+    "title": "Caja",
+    "link": "http://google.com",
+    "details": "Ideal para transportar un módulo de Cableado con 2 módulos. (Medidas con la caja armada)",
+    "support": "módulos Arduino Starter, Raspberry PI y Protoboard",
+    "additions": "",
+    "notIncluded": "",
+    "size": {
+      "long": 93,
+      "wide": 54,
+      "tall": 77
+    },
+    "photos": 6
 }]
