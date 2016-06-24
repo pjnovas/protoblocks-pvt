@@ -97,9 +97,9 @@ export default class ProductView extends Component {
                   <div>
                     <h4>Medidas:</h4>
                     <ul>
-                      <li>Largo: {size.long}mm.</li>
-                      <li>Ancho: {size.wide}mm.</li>
-                      <li>Alto: {size.tall}mm.</li>
+                      <li>Largo: {size.length}mm.</li>
+                      <li>Ancho: {size.width}mm.</li>
+                      <li>Alto: {size.height}mm.</li>
                     </ul>
                   </div>
                 }

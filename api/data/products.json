@@ -10,9 +10,9 @@
     "additions": "4 tornillos",
     "notIncluded": "Arduino",
     "size": {
-      "long": 93,
-      "wide": 75.5,
-      "tall": 7
+      "length": 93,
+      "width": 75.5,
+      "height": 7
     },
     "photos": 4
 }, {
@@ -27,9 +27,9 @@
     "additions": "6 tornillos",
     "notIncluded": "Arduino",
     "size": {
-      "long": 128,
-      "wide": 75.5,
-      "tall": 7
+      "length": 128,
+      "width": 75.5,
+      "height": 7
     },
     "photos": 4
 }, {
@@ -44,9 +44,9 @@
     "additions": "4 tornillos",
     "notIncluded": "Raspberry PI",
     "size": {
-      "long": 93,
-      "wide": 75.5,
-      "tall": 7
+      "length": 93,
+      "width": 75.5,
+      "height": 7
     },
     "photos": 4
 }, {
@@ -60,9 +60,9 @@
     "additions": "",
     "notIncluded": "Protoboard",
     "size": {
-      "long": 93,
-      "wide": 75.5,
-      "tall": 10.5
+      "length": 93,
+      "width": 75.5,
+      "height": 10.5
     },
     "photos": 7
 }, {
@@ -76,9 +76,9 @@
     "additions": "conectores banana instalados (rojo y negro)",
     "notIncluded": "",
     "size": {
-      "long": 41,
-      "wide": 41,
-      "tall": 18
+      "length": 41,
+      "width": 41,
+      "height": 18
     },
     "photos": 4
 }, {
@@ -92,9 +92,9 @@
     "additions": "",
     "notIncluded": "",
     "size": {
-      "long": 93,
-      "wide": 41,
-      "tall": 47
+      "length": 93,
+      "width": 41,
+      "height": 47
     },
     "photos": 6
 }, {
@@ -108,9 +108,9 @@
     "additions": "",
     "notIncluded": "",
     "size": {
-      "long": 93,
-      "wide": 54,
-      "tall": 77
+      "length": 93,
+      "width": 54,
+      "height": 77
     },
     "photos": 6
 }]
