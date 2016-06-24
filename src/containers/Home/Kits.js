@@ -26,12 +26,11 @@ export default class Kits extends Component {
 
   getFullKits() {
     const { kits, products } = this.props;
-
     return kits.map( kit => {
       return {
         ...kit,
         products: (kit.products || []).map( p => {
-          return Object.assign(products[p.id], p);
+          return Object.assign({}, p, products[p.id]);
         })
       };
     });

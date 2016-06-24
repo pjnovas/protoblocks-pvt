@@ -1,30 +1,19 @@
 [{
-  "id": "kit-arduino-starter",
-  "title": "Kit Arduino Starter",
+  "id": "kit-arduino",
+  "title": "Kit Arduino",
   "link": "http://google.com",
   "products": [{
     "quantity": 1,
     "id": "arduino-starter"
   }, {
-    "quantity": 2,
+    "quantity": 1,
     "id": "protoboard"
   }, {
     "quantity": 1,
     "id": "cables"
-  }]
-}, {
-  "id": "kit-arduino-expert",
-  "title": "Kit Arduino Expert",
-  "link": "http://google.com",
-  "products": [{
-    "quantity": 1,
-    "id": "arduino-expert"
-  }, {
-    "quantity": 2,
-    "id": "protoboard"
   }, {
     "quantity": 1,
-    "id": "cables"
+    "id": "box"
   }]
 }, {
   "id": "kit-raspberry-pi",
@@ -34,19 +23,36 @@
     "quantity": 1,
     "id": "raspberry-pi"
   }, {
+    "quantity": 1,
+    "id": "protoboard"
+  }, {
+    "quantity": 1,
+    "id": "cables"
+  }, {
+    "quantity": 1,
+    "id": "box"
+  }]
+}, {
+  "id": "kit-protoboard",
+  "title": "Kit Protoboards",
+  "link": "http://google.com",
+  "products": [{
     "quantity": 2,
     "id": "protoboard"
   }, {
     "quantity": 1,
     "id": "cables"
+  }, {
+    "quantity": 1,
+    "id": "box"
   }]
 }, {
-  "id": "kit-expansion",
-  "title": "Kit Expansión",
+  "id": "kit-arduino-expert",
+  "title": "Kit Arduino Expert",
   "link": "http://google.com",
   "products": [{
     "quantity": 1,
-    "id": "terminal"
+    "id": "arduino-expert"
   }, {
     "quantity": 2,
     "id": "protoboard"
