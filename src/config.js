@@ -15,6 +15,7 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   imagesBase: 'http://protoblocks.com.ar/images',
+  gaUA: 'UA-79895810-1',
   app: {
     title: 'ProtoBlocks',
     description: 'Prototipos modulares, con el sistema de los módulos ProtoBlocks ahora podes tener tus prototipos ordenados.',

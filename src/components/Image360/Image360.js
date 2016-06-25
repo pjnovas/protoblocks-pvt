@@ -11,7 +11,6 @@ export default class Image360 extends Component {
   }
 
   componentDidMount() {
-    console.log(window.innerWidth);
     if (!this.state.ready && window.innerWidth > 475) {
       this.loadSprite();
     }
