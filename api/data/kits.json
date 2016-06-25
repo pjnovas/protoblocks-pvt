@@ -2,6 +2,7 @@
   "id": "kit-arduino",
   "title": "Kit Arduino",
   "link": "http://google.com",
+  "visible": true,
   "products": [{
     "quantity": 1,
     "id": "arduino-starter"
@@ -19,6 +20,7 @@
   "id": "kit-raspberry-pi",
   "title": "Kit Raspberry PI",
   "link": "http://google.com",
+  "visible": true,
   "products": [{
     "quantity": 1,
     "id": "raspberry-pi"
@@ -36,6 +38,7 @@
   "id": "kit-protoboard",
   "title": "Kit Protoboards",
   "link": "http://google.com",
+  "visible": true,
   "products": [{
     "quantity": 2,
     "id": "protoboard"
@@ -50,6 +53,7 @@
   "id": "kit-arduino-expert",
   "title": "Kit Arduino Expert",
   "link": "http://google.com",
+  "visible": true,
   "products": [{
     "quantity": 1,
     "id": "arduino-expert"

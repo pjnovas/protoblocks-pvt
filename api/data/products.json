@@ -14,7 +14,8 @@
       "width": 75.5,
       "height": 7
     },
-    "photos": 4
+    "photos": 4,
+    "visible": true
 }, {
     "id": "arduino-expert",
     "family": "lightblue",
@@ -31,7 +32,8 @@
       "width": 75.5,
       "height": 7
     },
-    "photos": 4
+    "photos": 4,
+    "visible": true
 }, {
     "id": "raspberry-pi",
     "family": "red",
@@ -48,7 +50,8 @@
       "width": 75.5,
       "height": 7
     },
-    "photos": 4
+    "photos": 4,
+    "visible": true
 }, {
     "id": "protoboard",
     "family": "white",
@@ -64,7 +67,8 @@
       "width": 75.5,
       "height": 10.5
     },
-    "photos": 7
+    "photos": 7,
+    "visible": true
 }, {
     "id": "terminal",
     "family": "white",
@@ -80,7 +84,8 @@
       "width": 41,
       "height": 18
     },
-    "photos": 4
+    "photos": 4,
+    "visible": false
 }, {
     "id": "cables",
     "family": "orange",
@@ -96,7 +101,8 @@
       "width": 41,
       "height": 47
     },
-    "photos": 6
+    "photos": 6,
+    "visible": true
 }, {
     "id": "box",
     "family": "orange",
@@ -112,5 +118,6 @@
       "width": 54,
       "height": 77
     },
-    "photos": 6
+    "photos": 6,
+    "visible": true
 }]
