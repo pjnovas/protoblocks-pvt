@@ -41,41 +41,12 @@ export default class ProductView extends Component {
     }
   }
 
-/*
-  getTabs() {
-    const { id, tab, link } = this.props;
-    const styles = require('./View.scss');
-
-    const getTab = (section, text) => {
-      const style = section === tab ? styles.selected : '';
-      const to = section ? `/modulos/${id}/${section}` : `/modulos/${id}`;
-
-      return (
-        <li className={style}>
-          <Link to={to}>{text}</Link>
-        </li>
-      );
-    };
-
-    return (
-      <ul>
-        {getTab(undefined, 'Detalle')}
-        {getTab('info', 'Manual')}
-        {getTab('contact', 'Consulta')}
-        <li className={styles.buy}>
-          <a href={link} target="_blank">Comprar</a>
-        </li>
-      </ul>
-    );
-  }
-*/
   render() {
-    const { title, /*tab, family,*/
+    const { title, /*family,*/
       details, support, additions, size, notIncluded, link, showBuy } = this.props;
     const styles = require('./View.scss');
 
     const images = this.getImages();
-    //const tabs = this.getTabs();
 
     return (
       <div>
@@ -112,30 +83,7 @@ export default class ProductView extends Component {
             <div className={styles.slider}>
               <ImageGallery lazyLoad items={images}/>
             </div>
-{/*
-            <div className={styles.description}>
-              {tabs}
 
-              <div className={styles.tabs}>
-                { !tab &&
-                <div className={styles.tab + ' ' + styles.details}>
-                  {details}
-                </div>
-                }
-                { tab === 'info' &&
-                <div className={styles.tab + ' ' + styles.info}>
-                  Manual
-                </div>
-                }
-                { tab === 'contact' &&
-                <div className={styles.tab + ' ' + styles.contact}>
-                  Consulta
-                </div>
-                }
-              </div>
-
-            </div>
-*/}
           </div>
         </div>
       </div>
@@ -158,6 +106,5 @@ ProductView.propTypes = {
   }),
   notIncluded: PropTypes.string,
   link: PropTypes.string,
-  showBuy: PropTypes.bool,
-  tab: PropTypes.oneOf([ 'details', 'info', 'contact' ])
+  showBuy: PropTypes.bool
 };

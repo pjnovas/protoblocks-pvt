@@ -11,7 +11,8 @@ import {
 import * as productsActions from 'redux/modules/products';
 
 import {
-  ProductView
+  ProductView,
+  ProductNotFound
 } from '../../components';
 
 // this DUMMY annotation is necesary to make Server Rendering WORK
@@ -36,7 +37,8 @@ export default class Home extends Component {
     products: PropTypes.object,
     loading: PropTypes.bool,
     load: PropTypes.func.isRequired,
-    params: PropTypes.object
+    params: PropTypes.object,
+    replaceRoute: PropTypes.func
   };
 
   render() {
@@ -47,6 +49,12 @@ export default class Home extends Component {
     }
 
     const product = products[params.pid];
+    if (!product) {
+      return (
+        <ProductNotFound />
+      );
+    }
+
     const baseDesc = config.app.description;
     const desc = product.details || `Módulo ideal para ${product.support}.\n${baseDesc}`;
 

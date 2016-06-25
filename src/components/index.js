@@ -13,6 +13,7 @@ import Contact from './Contact/Contact';
 import ProductView from './Products/View';
 import ProductItem from './Products/Item';
 import ProductsList from './Products/List';
+import ProductNotFound from './Products/NotFound';
 
 import KitItem from './Kits/Item';
 import KitsList from './Kits/List';
@@ -33,6 +34,7 @@ export default {
   KitsList,
   Footer,
   ProductView,
+  ProductNotFound,
   Logo,
   NavBar
 };

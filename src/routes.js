@@ -4,22 +4,15 @@ import { IndexRoute, Route } from 'react-router';
 import {
     App,
     Home,
-    Product,
-    NotFound,
+    Product
   } from 'containers';
 
 export default () => {
   return (
     <Route path="/" component={App}>
-
       <Route path=":section" component={Home} />
-
-      <Route path="/modulos/:pid" component={Product}>
-        <Route path=":tab" component={Product}/>
-      </Route>
-
+      <Route path="/modulos/:pid" component={Product} />
       <IndexRoute component={Home}/>
-      <Route path="*" component={NotFound} status={404} />
     </Route>
   );
 };

@@ -1,0 +1,51 @@
+@import "../../theme/susy.scss";
+@import "../../theme/variables.scss";
+
+@import "./ImageGallery.scss";
+
+body {
+  background-color: #E8E8E8;
+}
+
+.container {
+  @include container($product-container);
+}
+
+.content {
+  @include span(12);
+
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  .header {
+    margin: 5px 10px;
+    position: relative;
+
+    h3 {
+      color: $color-font-dark;
+      margin: 0;
+      font-size: 2em;
+
+      text-transform: none;
+      text-align: center;
+      font-weight: 100;
+
+      border-bottom: 2px solid $color-separator;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      @include susy-media(0 $bp-small-2) {
+        padding-top: 5px;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 725px;
+  }
+}
