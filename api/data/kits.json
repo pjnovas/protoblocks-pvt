@@ -3,6 +3,7 @@
   "title": "Kit Arduino",
   "link": "http://google.com",
   "visible": true,
+  "showBuy": false,
   "products": [{
     "quantity": 1,
     "id": "arduino-starter"
@@ -21,6 +22,7 @@
   "title": "Kit Raspberry PI",
   "link": "http://google.com",
   "visible": true,
+  "showBuy": false,
   "products": [{
     "quantity": 1,
     "id": "raspberry-pi"
@@ -39,6 +41,7 @@
   "title": "Kit Protoboards",
   "link": "http://google.com",
   "visible": true,
+  "showBuy": false,
   "products": [{
     "quantity": 2,
     "id": "protoboard"
@@ -54,6 +57,7 @@
   "title": "Kit Arduino Expert",
   "link": "http://google.com",
   "visible": true,
+  "showBuy": false,
   "products": [{
     "quantity": 1,
     "id": "arduino-expert"

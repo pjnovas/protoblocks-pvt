@@ -71,7 +71,7 @@ export default class ProductView extends Component {
 */
   render() {
     const { title, /*tab, family,*/
-      details, support, additions, size, notIncluded, link } = this.props;
+      details, support, additions, size, notIncluded, link, showBuy } = this.props;
     const styles = require('./View.scss');
 
     const images = this.getImages();
@@ -85,9 +85,11 @@ export default class ProductView extends Component {
 
             <div className={styles.header}>
               <h3 className={styles.name}>{title}</h3>
-              <div className={styles.buy}>
-                <a href={link} target="_blank">Comprar</a>
-              </div>
+              { showBuy &&
+                <div className={styles.buy}>
+                  <a href={link} target="_blank">Comprar</a>
+                </div>
+              }
               <div className={styles.description}>
                 {details && <p>{details}</p>}
                 {support && <p>Soporta {support} {notIncluded && '*'}</p>}
@@ -156,5 +158,6 @@ ProductView.propTypes = {
   }),
   notIncluded: PropTypes.string,
   link: PropTypes.string,
+  showBuy: PropTypes.bool,
   tab: PropTypes.oneOf([ 'details', 'info', 'contact' ])
 };
