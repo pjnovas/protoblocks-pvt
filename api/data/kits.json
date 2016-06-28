@@ -1,9 +1,9 @@
 [{
   "id": "kit-arduino",
   "title": "Kit Arduino",
-  "link": "http://google.com",
+  "link": "http://articulo.mercadolibre.com.ar/MLA-625568337-kit-soportes-caja-arduino-y-protoboard-protoblocks-_JM",
   "visible": true,
-  "showBuy": false,
+  "showBuy": true,
   "products": [{
     "quantity": 1,
     "id": "arduino-starter"
@@ -20,9 +20,9 @@
 }, {
   "id": "kit-raspberry-pi",
   "title": "Kit Raspberry PI",
-  "link": "http://google.com",
+  "link": "http://articulo.mercadolibre.com.ar/MLA-625579664-kit-soportes-caja-raspberry-pi-y-protoboard-protoblocks-_JM",
   "visible": true,
-  "showBuy": false,
+  "showBuy": true,
   "products": [{
     "quantity": 1,
     "id": "raspberry-pi"
@@ -39,9 +39,9 @@
 }, {
   "id": "kit-protoboard",
   "title": "Kit Protoboards",
-  "link": "http://google.com",
+  "link": "http://articulo.mercadolibre.com.ar/MLA-625581460-kit-soportes-caja-para-protoboard-breadboard-protoblocks-_JM",
   "visible": true,
-  "showBuy": false,
+  "showBuy": true,
   "products": [{
     "quantity": 2,
     "id": "protoboard"
@@ -55,9 +55,9 @@
 }, {
   "id": "kit-arduino-expert",
   "title": "Kit Arduino Expert",
-  "link": "http://google.com",
+  "link": "http://articulo.mercadolibre.com.ar/MLA-625588976-kit-soportes-arduino-uno-y-mega-protoboards-protoblocks-_JM",
   "visible": true,
-  "showBuy": false,
+  "showBuy": true,
   "products": [{
     "quantity": 1,
     "id": "arduino-expert"
