@@ -4,7 +4,7 @@
     "brand": "arduino",
     "name": "Starter",
     "title": "Arduino Starter",
-    "link": "http://google.com",
+    "link": "http://articulo.mercadolibre.com.ar/MLA-625698535-modulo-soporte-para-arduino-uno-y-leonardo-protoblocks-_JM",
     "details": "",
     "support": "Arduino Uno, 101 y Leonardo",
     "additions": "4 tornillos",
@@ -16,14 +16,14 @@
     },
     "photos": 4,
     "visible": true,
-    "showBuy": false
+    "showBuy": true
 }, {
     "id": "arduino-expert",
     "family": "lightblue",
     "brand": "arduino",
     "name": "Expert",
     "title": "Arduino Expert",
-    "link": "http://google.com",
+    "link": "http://articulo.mercadolibre.com.ar/MLA-625698910-modulo-soporte-para-arduino-mega-y-due-protoblocks-_JM",
     "details": "",
     "support": "Arduino Uno, 101, Leonardo, Mega R3 y Due",
     "additions": "6 tornillos",
@@ -35,14 +35,14 @@
     },
     "photos": 4,
     "visible": true,
-    "showBuy": false
+    "showBuy": true
 }, {
     "id": "raspberry-pi",
     "family": "red",
     "brand": "raspberry",
     "name": "Raspberry PI",
     "title": "Raspberry PI",
-    "link": "http://google.com",
+    "link": "http://articulo.mercadolibre.com.ar/MLA-625699192-modulo-soporte-para-raspberry-pi-protoblocks-_JM",
     "details": "",
     "support": "Raspberry PI A+ y B generaciones 1+ 2 y 3 (no apto para generación 1)",
     "additions": "4 tornillos",
@@ -54,13 +54,13 @@
     },
     "photos": 4,
     "visible": true,
-    "showBuy": false
+    "showBuy": true
 }, {
     "id": "protoboard",
     "family": "white",
     "name": "Protoboard",
     "title": "Protoboard",
-    "link": "http://google.com",
+    "link": "http://articulo.mercadolibre.com.ar/MLA-625699860-modulo-soporte-para-protoboard-breadboard-protoblocks-_JM",
     "details": "",
     "support": "Protoboard de 400 puntos, o bien 830 puntos utilizando 2 módulos",
     "additions": "",
@@ -72,7 +72,7 @@
     },
     "photos": 7,
     "visible": true,
-    "showBuy": false
+    "showBuy": true
 }, {
     "id": "terminal",
     "family": "white",
@@ -96,7 +96,7 @@
     "family": "orange",
     "name": "Organizador de Cables",
     "title": "Cableado",
-    "link": "http://google.com",
+    "link": "http://articulo.mercadolibre.com.ar/MLA-625700377-modulo-cableado-para-protoboard-arduino-protoblocks-_JM",
     "details": "Módulo para sujetar y organizar cables.",
     "support": "",
     "additions": "",
@@ -108,13 +108,13 @@
     },
     "photos": 6,
     "visible": true,
-    "showBuy": false
+    "showBuy": true
 }, {
     "id": "box",
     "family": "orange",
     "name": "Caja",
     "title": "Caja",
-    "link": "http://google.com",
+    "link": "http://articulo.mercadolibre.com.ar/MLA-625700784-modulo-caja-para-protoboard-arduino-protoblocks-_JM",
     "details": "Ideal para transportar un módulo de Cableado con 2 módulos. (Medidas con la caja armada)",
     "support": "módulos Arduino Starter, Raspberry PI y Protoboard",
     "additions": "",
@@ -126,5 +126,5 @@
     },
     "photos": 6,
     "visible": true,
-    "showBuy": false
+    "showBuy": true
 }]
